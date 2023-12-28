@@ -21,5 +21,10 @@
     height: 100px;
     margin-left: 22px;
     margin-top: 30px;
+    border-radius: 20px;
 
+}
+
+#img-button {
+    border-radius: 20px;
 }
