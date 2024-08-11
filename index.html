@@ -3,26 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beterng's Home</title>
+    <meta http-equiv="refresh" content="3;url=https://beterng.github.io/desktop">
+    <title>Preparing for home</title>
     <link rel="stylesheet" href="src/css/pages/nav.css">
     <link rel="stylesheet" href="src/css/font.css">
-    <script src="src/js/pages/tran_to_mobile_web.js"></script>
+   <!-- <script src="src/js/pages/tran_to_mobile_web.js"></script> -->
+   <style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f8f8f8;
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+    .container {
+        text-align: center;
+    }
+</style>
+<script>
+    var timeleft = 3;
+    var countdownTimer = setInterval(function(){
+        document.getElementById("countdown").innerHTML = "The website will redirect after " + timeleft + " seconds.";
+        timeleft -= 1;
+        if(timeleft <= 0){
+            clearInterval(countdownTimer);
+            document.getElementById("countdown").innerHTML = "Changing direction..."
+        }
+    }, 1000);
+</script>
 
 </head>
 <body>
-
-    <div style="width: 100%; height: 700px; align-content: center; text-align: center; ;">
-
-
     <main>
         <h1 style="font-family:'Courier New'; font-size: 500%;">Hello There</h1>
         <h1 style="font-family:'Courier New', Courier, monospace;">Welcome!</h1>
         <p>Let's make you know more about us!</p>
-    </main>
-    <div>
+        <br/>
+        <p id="countdown"></p>
         
-    </div>
-         
-    </header>
+    </main>
 </body>
 </html>
