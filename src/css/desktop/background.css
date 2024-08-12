@@ -1,0 +1,12 @@
+* {
+    padding: 0px;
+    margin: 0px;   
+    --primary-color: #f1c40f;
+    --secondary-color: #2ecc71;
+    --tertiary-color: #3498db;
+}
+
+body {
+    background-color: #020713;
+    color: #f0f0f0f0;
+}
