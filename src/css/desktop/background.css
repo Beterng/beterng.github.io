@@ -7,6 +7,36 @@
 }
 
 body {
-    background-color: #020713;
+    background-color: #060238;
     color: #f0f0f0f0;
 }
+
+nav  {
+
+    background-color:#060238;
+    color: white;
+    border: none;
+    box-sizing: border-box;
+    display: block;
+}
+
+nav button {
+    background-color: #003068;
+    color: white;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    height: 52px;
+    /*border-radius: 20px;*/
+    border: #3498db 30px;
+}
+
+
+
+nav button:hover {
+    background-color: #005a90;
+    color: black;
+    border: none;
+    box-sizing: border-box;
+    padding: 10px 20px;
+}
+
