@@ -79,22 +79,35 @@
     }
 }
 
-main {
+.main {
+    min-height: 5vh;
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.glass {
+    margin-top: 10vh;
+    background: white;
+    max-width: 300vh;
+    height: 80vh;
+    width: 120vh;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+    align-content: center;
+    display: block;
     justify-self: center;
-    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.3));
+    align-items: stretch;
+    border: 0 25px 40px rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.1);
+    border-radius: 2rem;
+}
+
+nav button {
     color: black;
-    width: 80%;
-    min-height: 80vh;
-    box-shadow: 0 25px 40px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    border-radius: 5vh;
-    
-}
+    background: yellowgreen;
 
-main > nav {
-    margin-top: 2vh;
 }
-
     </style>
 
 
@@ -114,24 +127,19 @@ main > nav {
 </div> -->
 
 <main>
-    <nav>
-        <a id="about" href="src-file"><button>About</button></a>
-        <a href="src-file"><button>Certificate</button></a>
-        <a href="src-file"><button>Skills</button></a>
-        <a href="src-file"><button>Contact</button></a>
-    </nav>
 
 <!--            #### ####       Page 1      ####    ####        -->
-    <span class="page1 about">
+    <span class="page1 about main glass">
+        
         <h2>Hello!👋 My name is Phuong but you can call me Beter.</h2>
         <p>😆 Nice to see you in here.</p>
     </span>
 
 <!--            #### ####       Page 2      ####    ####        -->
-    <span class="page2 certificate">
+    <span class="page2 certificate main glass">
         <h1>About me</h1>
         <p>🔭 I am currently working at: Lithicsoft Organization.</p>
-        <p>🌱 And currently studying : Thirly school.</p>
+        <p>🌱 And currently studying : High school.</p>
         <p>📫 Contact me via: beterng@gmail.com </p>
         <p>😄 Pronoun: He/Him.</p>
         <p>⚡ Fun fact: I guess I don't know how to play the Guitar.</p>
@@ -141,7 +149,7 @@ main > nav {
 
 
 <!--            #### ####       Page 3      ####    ####        -->        
-        <span class="page3 skills">
+        <span class="page3 skills main glass">
             <h2>Python 3</h2>
             <h2>C# (2/10)</h2>
             <h2>C++ (3/10)</h2>
@@ -151,7 +159,7 @@ main > nav {
         </span>
 
 <!--            #### ####       Page 4      ####    ####        -->       
-        <span class="page4 contact">
+        <span class="page4 contact main glass">
             <div class="icon-contact">
                 <h2>Contact me via there way</h2>
                 <strong id="icon"><a href="https://www.facebook.com/beter.ng/" ><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -166,7 +174,7 @@ main > nav {
         </span>
 
 <!--            #### ####       Page 5      ####    ####        -->  
-        <span class="endpage goodbye">
+        <span class="endpage goodbye main glass">
             <h2>Thanks you for visting my website</h2>
             <p>Nice to see you in here.</p>
             <p>Have a nice day.</p>
