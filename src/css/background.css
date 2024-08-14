@@ -1,4 +1,12 @@
 * {
     padding: 0px;
     margin: 0px;   
+    color: white;
+    
 }
+
+body {
+    /* background-image: linear-gradient(to right top, #060238, #020f41, #02174a, #021e53, #01265c, #00346b, #004279, #005087, #00699b, #0082aa, #009bb3, #00b3b8); */
+    background: rgb(5, 14, 43);
+}
+
