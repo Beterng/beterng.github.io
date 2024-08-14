@@ -9,5 +9,5 @@
 ## Github Stats
 <a href="#"><img align="center" src="https://github-readme-stats.vercel.app/api?username=beterng&theme=nord&show_icons=true&hide_border=true&count_private=true" /></a>
 
-#WARNING
+# WARNING
 - The file "/main/src/js/tran_to_mobile_web.js" has copyright from [Lithicsoft](https://github.com/Lithicsoft) using [this repo](https://github.com/Lithicsoft/lithicsoft.github.io).Make sure you have read their rules before using it.
