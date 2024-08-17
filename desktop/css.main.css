@@ -1,0 +1,108 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;  
+}
+
+html,
+body {
+    /* background: content-box radial-gradient(crimson, skyblue); */
+    background-image: linear-gradient(to right top, #060238, #020f41, #02174a, #021e53, #01265c, #00346b, #004279, #005087, #00699b, #0082aa, #009bb3, #00b3b8); 
+    justify-content: center;
+    align-items: center;
+
+}
+/* .page4 .icon-contact a:hover {
+color:#00A0C6; 
+text-decoration:none; 
+cursor:pointer;  
+}
+.background-test {
+position:relative;
+filter: blur(200);
+} */
+
+/*
+.background-theme {
+.circle {
+    width: 25vh;
+    height: 25vh;
+    border-radius: 20vh;
+    margin-left: 40vmax;
+    background-position-x: center;
+    background-image: linear-gradient(to right top, #578bff, #00a2ff, #00b2f3, #00bedb, #00c6c1);
+    box-shadow: 0 25px 45px rgba(0,0f,0,0.1) ;
+    backdrop-filter: unset;
+}
+.circle-theme-0 {
+    background-image: linear-gradient(to right bottom, #578bff, #00a2ff, #00b2f3, #00bedb, #00c6c1);
+    margin-top: 10vh;
+    margin-left: 20vmax;
+    width: 15vh;
+    height: 15vh;
+}
+.circle-theme-1 {
+    background-image: linear-gradient(to left bottom, #578bff, #00a2ff, #00b2f3, #00bedb, #00c6c1);
+    margin-left: 70vmax;
+    width: 30vh;
+    height: 30vh;
+}
+.circle-theme-2 {
+    background-image: linear-gradient(to right top, #578bff, #00a2ff, #00b2f3, #00bedb, #00c6c1);
+    margin-left: 10vmax;
+    width: 40vh;
+    height: 40vh;
+}
+.circle-theme-3 {
+    background-image: linear-gradient(to right top, #578bff, #00a2ff, #00b2f3, #00bedb, #00c6c1);
+    margin-top: -50vh; 
+    margin-left: 20vmax;
+    width: 28vh;
+    height: 28vh;
+}
+.circle-theme-4 {
+    background-image: linear-gradient(to right top, #578bff, #00a2ff, #00b2f3, #00bedb, #00c6c1);
+    margin-top: -30vh; 
+    margin-left: 70vmax;
+    width: 20vh;
+    height: 20vh;
+}
+}
+*/
+
+.main {
+display: grid;
+align-items: center;
+justify-content: center;
+display: grid;
+margin-left: 20%;
+}
+
+.glass {
+background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+align-content: center;
+margin-top: 10vh;
+max-width: 300vh;
+height: 80vh;
+width: 60%;
+justify-self: center;
+border: 0 25px 40px rgba(0, 0, 0, 0.1);
+box-shadow: rgba(0, 0, 0, 0.1);
+border-radius: 2rem;
+
+}
+
+.page4 .icon-contact a {
+    color: #0060B6;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}    
+
+nav button {
+color: black;
+background: yellowgreen;
+display: inline-flex;
+
+
+}
