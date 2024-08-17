@@ -2,6 +2,7 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;  
+    text-align: center;
 }
 
 html,
@@ -89,7 +90,6 @@ justify-self: center;
 border: 0 25px 40px rgba(0, 0, 0, 0.1);
 box-shadow: rgba(0, 0, 0, 0.1);
 border-radius: 2rem;
-
 }
 
 .page4 .icon-contact a {
@@ -103,6 +103,4 @@ nav button {
 color: black;
 background: yellowgreen;
 display: inline-flex;
-
-
 }
