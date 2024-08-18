@@ -1,47 +1,152 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="3;url=https://beterng.github.io/desktop/">
-    <title>Preparing for home</title>
-   <style>
-    body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-        background-color: #f8f8f8;
-        font-family: Arial, sans-serif;
-        text-align: center;
+    <title>Beterng's Home</title>
+    <!-- <script src="../src/js/tran_to_mobile_web.js"></script> -->
+    <link rel="stylesheet" href="./css.font.css">
 
-    }
-    .container {
-        text-align: center;
-    }
-    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+<style>
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;  
+    text-align: center;
+}
+
+html,
+body { 
+    /* background: content-box radial-gradient(crimson, skyblue); */
+    background-image: linear-gradient(to right top, #060238, #020f41, #02174a, #021e53, #01265c, #00346b, #004279, #005087, #00699b, #0082aa, #009bb3, #00b3b8); 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+    .main {
+display: grid;
+align-items: center;
+justify-content: center;
+display: grid;
+margin-left: 5%;
+}
+
+.glass {
+  display: none;
+background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+align-content: center;
+margin-top: 2vh;
+max-width: 300vh;
+height: 70vh;
+width: 90%;
+justify-self: center;
+border: 0 25px 40px rgba(0, 0, 0, 0.1);
+box-shadow: rgba(0, 0, 0, 0.1);
+border-radius: 2rem;
+}
+
+.page4 .icon-contact a {
+    color: #0060B6;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}    
+
+nav button {
+margin-top: 10vh;
+color: black;
+background: yellowgreen;
+display: inline-flex;
+}
+
+.page1 {
+  display: grid;
+}
 </style>
-<!-- <script>
-    var timeleft = 3;
-    var countdownTimer = setInterval(function(){
-        document.getElementById("countdown").innerHTML = "The website will redirect after " + timeleft + " seconds.";
-        timeleft -= 1;
-        if(timeleft <= 0){
-            clearInterval(countdownTimer);
-            document.getElementById("countdown").innerHTML = "Changing direction..."
-        }
-    }, 1000);
-</script> -->
-
 </head>
-<body>
-    <main>
-        <h1 style="font-family: 'Bebas Neue', sans-serif; font-size: 6vh;"></strong>Hello There</strong></h1>
-        <h2 style="font-family: 'Bebas Neue', sans-serif; font-size: 4vh">Welcome!</h1>
-        <p>MOVE MOVE MOVE</p>
-        <p id="countdown"></p>
+<body >
+
+<!--     Background     -->
+<!-- <div id="background-test">
+    <span class="background-theme circle glass">
+        <div class="circle circle-theme-0 circle-theme"></div>
+        <div class="circle circle-theme-1 circle-theme"></div>
+        <div class="circle circle-theme-2 circle-theme"></div>
+        <div class="circle circle-theme-3 circle-theme"></div>
+        <div class="circle circle-theme-4 circle-theme"></div>
+
+</span>
+</div> -->
+
+<main>
+
+    <nav class=" button" >
+        <a id="welcome" href="#"><button>Welcome</button></a>
+        <a id="about" href="#"><button>About1</button></a>
+        <a id="certificate" href="#"><button>Certificate2</button></a>
+        <a id="skills" href="#"><button>Skills3</button></a>
+        <a id="contact" href="#"><button>Contact4</button></a>
+    </nav>
+<!--            #### ####       Page 1      ####    ####        -->
+    <span class="page1 about main glass">
+        <img src="../desktop/resc/img/avatar.png" alt="My avatar home page" id="avatar"/>
+        <h2>Hello!👋 My name is Phuong but you can call me Beter.</h2>
+        <p>😆 Nice to see you in here.</p>
+    
+    </span>
+
+<!--            #### ####       Page 2      ####    ####        -->
+    <span class="page2 certificate main glass">
+    
+        <h1>About me</h1>
+        <p>🔭 I am currently working at: Lithicsoft Organization.</p>
+        <p>🌱 And currently studying : High school.</p>
+        <p>📫 Contact me via: beterng@gmail.com </p>
+        <p>😄 Pronoun: He/Him.</p>
+        <p>⚡ Fun fact: I guess I don't know how to play the Guitar.</p>
+        <img src="https://github-readme-stats.vercel.app/api?username=beterng&theme=algolia&show_icons=true&hide_border=true&count_private=false" />
+        <img src="https://github-readme-streak-stats.herokuapp.com/?user=beterng&theme=algolia&hide_border=true"/>
+    
+    </span>
+
+
+<!--            #### ####       Page 3      ####    ####        -->        
+        <span class="page3 skills main glass">
         
-    </main>
+            <h2>Python 3</h2>
+            <h2>C# (2/10)</h2>
+            <h2>C++ (3/10)</h2>
+            <h2>HTML</h2>
+            <h2>CSS</h2>
+            <h2>JavaScript</h2>
+        
+        </span>
+
+<!--            #### ####       Page 4      ####    ####        -->       
+        <span class="page4 contact main glass">
+            <div class="icon-contact">
+                <h2>Contact me via there way</h2>
+                <strong id="icon"><a target="_blank" href="https://www.facebook.com/beter.ng/" ><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M26 16.0607C26 10.504 21.5233 6 16 6C10.4767 6 6 10.504 6 16.0607C6 21.0833 9.656 25.2453 14.4373 26V18.9693H11.8987V16.06H14.4373V13.844C14.4373 11.3227 15.93 9.92933 18.2147 9.92933C19.308 9.92933 20.4533 10.126 20.4533 10.126V12.602H19.1913C17.9493 12.602 17.5627 13.378 17.5627 14.174V16.0607H20.336L19.8927 18.9687H17.5627V26C22.344 25.2453 26 21.0833 26 16.0607Z" fill="#0C3F71"/>
+                    <rect x="0.5" y="0.5" width="31" height="31" rx="15.5" stroke="#0C3F71"/>
+                    </svg> <p>Facebook</p></a></strong>
+            </div>
+            <div>
+                <h2>Reply to me using Email</h2>
+                
+            </div>
+        </span>
+
+<!--            #### ####       Page 5      ####    ####        -->  
+        <span class="endpage goodbye main glass">
+            <h2>Thanks you for visting my website</h2>
+            <p>Nice to see you in here.</p>
+            <p>Have a nice day.</p>
+        </span>
+</main>
+ </body>
 </body>
-</html>
+</html> 
