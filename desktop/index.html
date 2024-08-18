@@ -17,13 +17,14 @@
 
 html,
 body {
+    height: 100vh;
     /* background: content-box radial-gradient(crimson, skyblue); */
     background-image: linear-gradient(to right top, #060238, #020f41, #02174a, #021e53, #01265c, #00346b, #004279, #005087, #00699b, #0082aa, #009bb3, #00b3b8); 
     justify-content: center;
     align-items: center;
-
 }
-    .main {
+
+.main {
 display: grid;
 align-items: center;
 justify-content: center;
@@ -32,9 +33,10 @@ margin-left: 20%;
 }
 
 .glass {
+  display: none;
 background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
 align-content: center;
-margin-top: 10vh;
+margin-top: 5vh;
 max-width: 300vh;
 height: 80vh;
 width: 60%;
@@ -52,9 +54,14 @@ border-radius: 2rem;
 }    
 
 nav button {
+margin-top: 5vh;
 color: black;
 background: yellowgreen;
 display: inline-flex;
+}
+
+.page1 {
+  display: grid;
 }
 </style>
 </head>
