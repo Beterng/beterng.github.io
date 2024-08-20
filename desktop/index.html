@@ -14,11 +14,13 @@
     margin: 0px;
     box-sizing: border-box;  
     text-align: center;
+
 }
 
 html,
 body {
     /* background: content-box radial-gradient(crimson, skyblue); */
+    background-image: url(./resc/img/backgournd.png);
     justify-content: center;
     align-items: center;
     background: #000616;
@@ -26,7 +28,9 @@ body {
 
 /* Backgournd  1 */
 .color-back {
-background-color: rgba(5, 64, 139, 0.411);
+background-image: url(./resc/img/backgournd.jpg);
+background-repeat: no-repeat;
+background-size: cover;
 position: fixed;
 box-sizing: border-box;
 margin-top: -2%;
@@ -75,9 +79,9 @@ border-radius: 2rem;
 }
 
 .tabs input:nth-child(3):checked ~ .buttons label:nth-child(3),
-.tabs input:nth-child(1):checked ~ .buttons label:nth-child(1)
-.tabs input:nth-child(2):checked ~ .buttons label:nth-child(2)
-.tabs input:nth-child(4):checked ~ .buttons label:nth-child(4)
+.tabs input:nth-child(1):checked ~ .buttons label:nth-child(1),
+.tabs input:nth-child(2):checked ~ .buttons label:nth-child(2),
+.tabs input:nth-child(4):checked ~ .buttons label:nth-child(4),
 .tabs input:nth-child(5):checked ~ .buttons label:nth-child(5) 
 {
     color: #ffff;
@@ -91,7 +95,7 @@ border-radius: 2rem;
     bottom: 0;
     width: 20%;
     height: 8%;
-    transition: 0.5s;
+    transition: 0.5s;  
 }
 .underline::before {
     content: "";
@@ -145,9 +149,10 @@ align-items: center;
 justify-content: center;
 display: grid;
 margin-left: 20%;
+color: azure;
 }
 
-.glass {
+.page {
 z-index: 1;
 display: none;
 background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
@@ -165,10 +170,6 @@ box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 border-radius: 20px;
 }
 
-.welcome {
-    z-index: 1;
-    display: block;
-}
 
 .page4 .icon-contact a {
     color: #0060B6;
@@ -176,6 +177,9 @@ border-radius: 20px;
     text-align: center;
     display: block;
 }    
+.welcome {
+    display: block;
+}
 
 main img {
     width: 50vh;
@@ -195,16 +199,16 @@ main img {
 <body >
 
 <div class="color-back">
-    <div class="circle circle-theme-0 circle-theme"></div>
+    <!-- <div class="circle circle-theme-0 circle-theme"></div>
     <div class="circle circle-theme-1 circle-theme"></div>
     <div class="circle circle-theme-2 circle-theme"></div>
     <div class="circle circle-theme-3 circle-theme"></div>
-    <div class="circle circle-theme-4 circle-theme"></div>
+    <div class="circle circle-theme-4 circle-theme"></div> -->
 </div>
 
 <main>
 
-    <nav class=" button" >
+    <nav class="button" >
         <div class="tabs">
             <input type="radio" name="tabsMenu" id="profile">
             <input type="radio" name="tabsMenu" id="way-info">
@@ -228,14 +232,14 @@ main img {
     <!--            #### ####       welcome      ####    ####        -->
     <div class="glass"></div>
 
-    <span class="welcome main glass page">
+    <span class="welcome main page">
         <h1>About me</h1>
         <h2>Hello!👋 My name is Phuong but you can call me Beter.</h2>
         <p>😆 Nice to see you in here.</p>
     </span>
 
  <!--            #### ####       Page 1      ####    ####        -->
-    <span id="page1" class="ce main glass page">
+    <span id="page1" class="profile main glass page">
         <h1>My Proflict - da huida hui</h1>
         <h2>Hello!👋 My name is Phuong but you can call me Beter.</h2>
         <p>😆 Nice to see you in here.</p>
@@ -263,7 +267,7 @@ main img {
     </span>
 <!--            #### ####       Page 4      ####    ####        -->        
         
-        <span id="page4" class="skills-cer main glass">
+        <span id="page4" class="skills-cer main glass page">
             <h2>Python 3</h2>
             <h2>C# (2/10)</h2>
             <h2>C++ (3/10)</h2>
@@ -286,7 +290,7 @@ main img {
 
 
 <!--            #### ####       Google Page      ####    ####        -->  
-        <span class="endpage goodbye main glass">
+        <span class="endpage goodbye main glass page">
             <h2>Thanks you for visting my website</h2>
             <p>Nice to see you in here.</p>
             <p>Have a nice day.</p>
@@ -296,7 +300,7 @@ main img {
 <script>
     function changePage(pageNum) {
   var i;
-  var x = document.getElementsByClassName("glass");
+  var x = document.getElementsByClassName("page");
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";  
   }
