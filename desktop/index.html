@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beterng's Home</title>
-    <script src="./tran_to_mobile_web.js"></script>
+    <!-- <script src="../src/js/tran_to_mobile_web.js"></script> -->
     <link rel="stylesheet" href="./css.font.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 <style>
 * {
     padding: 0px;
@@ -17,14 +18,128 @@
 
 html,
 body {
-    height: 100vh;
     /* background: content-box radial-gradient(crimson, skyblue); */
-    background-image: linear-gradient(to right top, #060238, #020f41, #02174a, #021e53, #01265c, #00346b, #004279, #005087, #00699b, #0082aa, #009bb3, #00b3b8); 
     justify-content: center;
     align-items: center;
+    background: #000616;
 }
 
-.main {
+/* Backgournd  1 */
+.color-back {
+background-color: rgba(5, 64, 139, 0.411);
+position: fixed;
+box-sizing: border-box;
+margin-top: -2%;
+margin-left: 5%;
+align-content: center;
+height: 90%;
+width: 90%;
+justify-self: center;
+border: 0 25px 40px rgba(0, 0, 0, 0.1);
+box-shadow: rgba(0, 0, 0, 0.1);
+border-radius: 2rem;
+}
+/* Button */
+.tabs input{
+    visibility: hidden;
+    display: none;
+}
+
+.buttons
+{
+    margin-top: 5%;
+    margin-left: 30%;
+    width: 40%;
+    position: relative;
+    display: flex;
+    gap: 3%;
+    padding: 0.5% 5%;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.151);
+    background: #000333;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.buttons label {
+    width: 200%;
+    font-size: 150%;
+    -webkit-text-stroke: 1px #ffff;
+    opacity: 0.3;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.buttons label:hover {
+    opacity: 1;
+    filter: drop-shadow(0 0 10px #ffff) drop-shadow(0 0 10px #ffff);
+}
+
+.tabs input:nth-child(3):checked ~ .buttons label:nth-child(3),
+.tabs input:nth-child(1):checked ~ .buttons label:nth-child(1)
+.tabs input:nth-child(2):checked ~ .buttons label:nth-child(2)
+.tabs input:nth-child(4):checked ~ .buttons label:nth-child(4)
+.tabs input:nth-child(5):checked ~ .buttons label:nth-child(5) 
+{
+    color: #ffff;
+    opacity: 1;
+    filter: drop-shadow(0 0 10px #ffff) drop-shadow(0 0 10px #ffff);
+}
+
+.underline{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 20%;
+    height: 8%;
+    transition: 0.5s;
+}
+.underline::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 7vh;
+    height: 200%;
+    background: #ffff;
+    border-radius: 4px;
+    filter: drop-shadow(0 0 10px #ffff) drop-shadow(0 0 20px #ffff) drop-shadow(0 0 30px #ffff) drop-shadow(0 0 50px #ffff);
+}
+
+.underline::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 100%;
+    background: #ffff;
+    border-radius: 4px;
+    filter: drop-shadow(0 0 10px #ffff) drop-shadow(0 0 20px #ffff) drop-shadow(0 0 30px #ffff) drop-shadow(0 0 50px #ffff) blur((5px));
+}
+
+.tabs input:nth-child(1):checked ~ .buttons .underline {
+    left: 9%;
+}
+
+.tabs input:nth-child(2):checked ~ .buttons .underline {
+    left: 24.4%;
+}
+
+.tabs input:nth-child(3):checked ~ .buttons .underline {
+    left: 40%;
+}
+
+.tabs input:nth-child(4):checked ~ .buttons .underline {
+    left: 55.6%;
+}
+
+.tabs input:nth-child(5):checked ~ .buttons .underline {
+    left: 71%;
+}
+
+/*              */
+
+    .main {    
 display: grid;
 align-items: center;
 justify-content: center;
@@ -33,17 +148,21 @@ margin-left: 20%;
 }
 
 .glass {
-  display: none;
-background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+z-index: 1;
+display: none;
+background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
 align-content: center;
-margin-top: 5vh;
-max-width: 300vh;
-height: 80vh;
-width: 60%;
+max-width: 70%;
+margin-top: 2%;
+margin-left: 15%;
+height: 70vh;
+width: 70%;
 justify-self: center;
-border: 0 25px 40px rgba(0, 0, 0, 0.1);
-box-shadow: rgba(0, 0, 0, 0.1);
-border-radius: 2rem;
+border: 1px soild rgba(255, 255, 255,0.18);
+box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+border-radius: 20px;
 }
 
 .page4 .icon-contact a {
@@ -53,51 +172,71 @@ border-radius: 2rem;
     display: block;
 }    
 
-nav button {
-margin-top: 5vh;
-color: black;
-background: yellowgreen;
-display: inline-flex;
+.welcome {
+    z-index: 1;
+    display: block;
 }
 
-.page1 {
-  display: grid;
-}
 </style>
 </head>
 <body >
 
-<!--     Background     -->
-<!-- <div id="background-test">
-    <span class="background-theme circle glass">
-        <div class="circle circle-theme-0 circle-theme"></div>
-        <div class="circle circle-theme-1 circle-theme"></div>
-        <div class="circle circle-theme-2 circle-theme"></div>
-        <div class="circle circle-theme-3 circle-theme"></div>
-        <div class="circle circle-theme-4 circle-theme"></div>
-
-</span>
-</div> -->
+<div class="color-back">
+    <div class="circle circle-theme-0 circle-theme"></div>
+    <div class="circle circle-theme-1 circle-theme"></div>
+    <div class="circle circle-theme-2 circle-theme"></div>
+    <div class="circle circle-theme-3 circle-theme"></div>
+    <div class="circle circle-theme-4 circle-theme"></div>
+</div>
 
 <main>
 
     <nav class=" button" >
-        <a id="welcome" href="#"><button>Welcome</button></a>
-        <a id="about" href="#"><button>About1</button></a>
-        <a id="certificate" href="#"><button>Certificate2</button></a>
-        <a id="skills" href="#"><button>Skills3</button></a>
-        <a id="contact" href="#"><button>Contact4</button></a>
+        <div class="tabs">
+            <input type="radio" name="tabsMenu" id="profile">
+            <input type="radio" name="tabsMenu" id="way-info">
+            <input type="radio" name="tabsMenu" id="home">
+            <input type="radio" name="tabsMenu" id="skills-cer">
+            <input type="radio" name="tabsMenu" id="contact">
+
+            <div class="buttons">
+                <label for="profile" onclick="changePage('page1')"><i class="fa-solid fa-user"></i></label>
+                <label for="way-info" onclick="changePage('page2')""><i class="fa-solid fa-binoculars"></i></label>
+                <label for="home" onclick="changePage('page3')""><i class="fa-solid fa-house"></i></label>
+                <label for="skills-cer" onclick="changePage('page4')""><i class="fa-solid fa-code"></i></label>
+                <label for="contact" onclick="changePage('page5')""><i class="fa-solid fa-address-book"></i></label>
+                <div class="underline"></div>
+            </div>
+        </div>
     </nav>
-<!--            #### ####       Page 1      ####    ####        -->
-    <span class="page1 about main glass">
-    
+
+    <!-- Test background -->
+
+    <!--            #### ####       welcome      ####    ####        -->
+    <div class="glass"></div>
+
+    <span class="welcome main glass page">
+        <h1>About me</h1>
         <h2>Hello!👋 My name is Phuong but you can call me Beter.</h2>
         <p>😆 Nice to see you in here.</p>
-    
     </span>
 
-<!--            #### ####       Page 2      ####    ####        -->
-    <span class="page2 certificate main glass">
+ <!--            #### ####       Page 1      ####    ####        -->
+    <span id="page1" class="ce main glass page">
+        <h1>My Proflict - da huida hui</h1>
+        <h2>Hello!👋 My name is Phuong but you can call me Beter.</h2>
+        <p>😆 Nice to see you in here.</p>
+    </span>
+
+       <!--        Page 2          -->
+    <span id="page2" class="way-info main glass page">
+        <h2>Thanks you for visting my website</h2>
+        <p>Nice to see you inrgrgtrth here.</p>
+        <p>Have a nice day.</p>
+    </span>
+
+<!--            #### ####       Page 3      ####    ####        -->
+    <span id="page3" class="home main glass page">
     
         <h1>About me</h1>
         <p>🔭 I am currently working at: Lithicsoft Organization.</p>
@@ -109,22 +248,19 @@ display: inline-flex;
         <img src="https://github-readme-streak-stats.herokuapp.com/?user=beterng&theme=algolia&hide_border=true"/>
     
     </span>
-
-
-<!--            #### ####       Page 3      ####    ####        -->        
-        <span class="page3 skills main glass">
+<!--            #### ####       Page 4      ####    ####        -->        
         
+        <span id="page4" class="skills-cer main glass">
             <h2>Python 3</h2>
             <h2>C# (2/10)</h2>
             <h2>C++ (3/10)</h2>
             <h2>HTML</h2>
             <h2>CSS</h2>
             <h2>JavaScript</h2>
-        
         </span>
 
-<!--            #### ####       Page 4      ####    ####        -->       
-        <span class="page4 contact main glass">
+<!--            #### ####       Page 5      ####    ####        -->       
+        <span id="page5" class="contact main glass page">
             <div class="icon-contact">
                 <h2>Contact me via there way</h2>
                 <strong id="icon"><a target="_blank" href="https://www.facebook.com/beter.ng/" ><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -134,17 +270,29 @@ display: inline-flex;
             </div>
             <div>
                 <h2>Reply to me using Email</h2>
-                
             </div>
         </span>
 
-<!--            #### ####       Page 5      ####    ####        -->  
+
+<!--            #### ####       Google Page      ####    ####        -->  
         <span class="endpage goodbye main glass">
             <h2>Thanks you for visting my website</h2>
             <p>Nice to see you in here.</p>
             <p>Have a nice day.</p>
         </span>
 </main>
+
+<script>
+    function changePage(pageNum) {
+  var i;
+  var x = document.getElementsByClassName("glass");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  document.getElementById(pageNum).style.display = "block";  
+}
+</script>
+
  </body>
 </body>
 </html> 
