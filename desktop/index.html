@@ -20,28 +20,32 @@
 html,
 body {
     /* background: content-box radial-gradient(crimson, skyblue); */
-    background-image: url(./resc/img/backgournd.png);
+    background-image: url(./resc/img/background-19-6.png);
+    background-size: cover;
     justify-content: center;
     align-items: center;
-    background: #000616;
+    
+
 }
 
 /* Backgournd  1 */
 .color-back {
-background-image: url(./resc/img/backgournd.jpg);
+background-image: url(./resc/img/background-19-6.png);
+visibility: hidden;
 background-repeat: no-repeat;
 background-size: cover;
 position: fixed;
 box-sizing: border-box;
-margin-top: -2%;
+margin-top: -5%;
 margin-left: 5%;
 align-content: center;
-height: 90%;
+height: 95%;
 width: 90%;
 justify-self: center;
 border: 0 25px 40px rgba(0, 0, 0, 0.1);
 box-shadow: rgba(0, 0, 0, 0.1);
-border-radius: 2rem;
+border-bottom-left-radius: 20px;
+border-bottom-right-radius: 20px;
 }
 /* Button */
 .tabs input{
@@ -51,7 +55,7 @@ border-radius: 2rem;
 
 .buttons
 {
-    margin-top: 5%;
+    margin-top: 2%;
     margin-left: 30%;
     width: 40%;
     position: relative;
@@ -212,16 +216,16 @@ main img {
         <div class="tabs">
             <input type="radio" name="tabsMenu" id="profile">
             <input type="radio" name="tabsMenu" id="way-info">
-            <input type="radio" name="tabsMenu" id="home">
+            <input type="radio" name="tabsMenu" id="home" checked>
             <input type="radio" name="tabsMenu" id="skills-cer">
             <input type="radio" name="tabsMenu" id="contact">
 
             <div class="buttons">
                 <label for="profile" onclick="changePage('page1')"><i class="fa-solid fa-user"></i></label>
-                <label for="way-info" onclick="changePage('page2')""><i class="fa-solid fa-binoculars"></i></label>
-                <label for="home" onclick="changePage('page3')""><i class="fa-solid fa-house"></i></label>
-                <label for="skills-cer" onclick="changePage('page4')""><i class="fa-solid fa-code"></i></label>
-                <label for="contact" onclick="changePage('page5')""><i class="fa-solid fa-address-book"></i></label>
+                <label for="way-info" onclick="changePage('page2')"><i class="fa-solid fa-binoculars"></i></label>
+                <label for="home" onclick="changePage('page3')"><i class="fa-solid fa-house"></i></label>
+                <label for="skills-cer" onclick="changePage('page4')"><i class="fa-solid fa-code"></i></label>
+                <label for="contact" onclick="changePage('page5')"><i class="fa-solid fa-address-book"></i></label>
                 <div class="underline"></div>
             </div>
         </div>
@@ -233,7 +237,7 @@ main img {
     <div class="glass"></div>
 
     <span class="welcome main page">
-        <h1>About me</h1>
+        <img src="./resc/img/avatar-2.png" type ="png" style="width: 20vh; height: 20vh; border-radius: 100%;" \>
         <h2>Hello!👋 My name is Phuong but you can call me Beter.</h2>
         <p>😆 Nice to see you in here.</p>
     </span>
@@ -298,7 +302,7 @@ main img {
 </main>
 
 <script>
-    function changePage(pageNum) {
+    function changePage(pageNum, ) {
   var i;
   var x = document.getElementsByClassName("page");
   for (i = 0; i < x.length; i++) {
