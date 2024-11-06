@@ -62,7 +62,7 @@ jobs:
       - name: Restore cache
         uses: actions/cache@v4
         with:
-          path: |
+          path: /projects/nuxjs/test1 # |
             dist
             .nuxt
           key: ${{ runner.os }}-nuxt-build-${{ hashFiles('dist') }}
