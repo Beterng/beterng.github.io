@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beterng's Home</title>
+    <script src="./tran_to_mobile_web.js"></script>
+    <link rel="stylesheet" href="./css.font.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <meta http-equiv="refresh" content="10;url=https://beterng.github.io/about-me/desktop">
+    <!-- <meta http-equiv="refresh" content="10;url=https://localhost/home"> -->
+
+    <style>
+        body {
+            display: grib;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin-top: 40vh;
+            background-color: #f8f8f8;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .container {
+            text-align: center;
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+    </style>
+
+<script>
+    var timeleft = 10;
+    var countdownTimer = setInterval(function(){
+        document.getElementById("countdown").innerHTML = "Action will be executed in " + timeleft + " seconds.";
+        timeleft -= 1;
+        if(timeleft <= 0){
+            clearInterval(countdownTimer);
+            document.getElementById("countdown").innerHTML = "Changing direction..."
+        }
+    }, 1000);
+</script>
+
+</head>
+
+<body>
+    <h1>Hello There!</h1>
+    <p>This website is in dev. See you soon</p>
+    <p>Takes you back to the available link address</p>
+    <p id="countdown"></p>
+</body>
+</html>
