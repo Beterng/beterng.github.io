@@ -33,30 +33,39 @@
 
     header
     {
-      #img
+       
+      div {
+        box-shadow: black;
+        text-align: center;
+        box-sizing: border-box;
+        margin-top: 5vh;
+        margin-inline: 21%;
+        border: groove  black;
+        text-decoration: none;
+        border-radius: 20px;
+      }
+      ul{
+        display: inline-flex;
+        list-style-type: none;
+      }
+      a
       {
-        background-image: url(./rescr/header.jpg);
-        height: 70vh;
-        /* margin: -25vh -25vh -25vh -25vh ; */
-        margin: -15% -15% -15% -12%;
-        filter: grayscale(40%);
+        padding:15px;
+        padding-inline: 16px;
+        display: inline-block;
+        background-color: f8f8f8;
+        font-family: 'Times New Roman', Times, serif;
+        border-radius: 20px;
+      }
+      a:link {
+        text-decoration: none;
+        color: black;
       }
 
-       
-      h1
+      a:hover
       {
-        display: inline-block;
-        padding-inline: 15px;
-        color: aquamarine;
-        margin-top:32vh;
-        font-family: 'Times New Roman', Times, serif;
-      }
-      h1:hover
-      {
-        display: inline-block;
-        padding-inline: 15px;
-        color: bisque;
-        margin-top: 30vh;
+        color: white;
+        background-color: black;
       }
     }
 
@@ -73,14 +82,30 @@
   <div id="img">
     <nav>
       <ul>
-        
+        <p>
+        <li><a target="_blank">Địa Điểm <i class="fa fa-caret-down" style="font-size: 15px" aria-hidden="true"></i>
+          <i class="fa fa-caret-up" style="display: none; font-size: 15px" aria-hidden="true"></i></a>
+        </li>
+        <li>
+          <a target="_blank">Ẩm Thực <i class="fa fa-caret-down" style="font-size: 15px" aria-hidden="true"></i>
+          <i class="fa fa-caret-up" style="display: none; font-size: 15px" aria-hidden="true"></i></a>
+        </li>
+        <li>
+          <a target="_blank">Lịch Sử <i class="fa fa-caret-down" style="font-size: 15px" aria-hidden="true"></i>
+          <i class="fa fa-caret-up" style="display: none; font-size: 15px" aria-hidden="true"></i></a>
+        </li>
+        <li>
+          <a target="_blank">Đặt vé <i class="fa fa-caret-down" style="font-size: 15px" aria-hidden="true"></i>
+          <i class="fa fa-caret-up" style="display: none; font-size: 15px" aria-hidden="true"></i></a>
+        </li>
+        <li>
+          <a target="_blank">Về Chúng Tôi <i class="fa fa-caret-down" style="font-size: 15px" aria-hidden="true"></i>
+          <i class="fa fa-caret-up" style="display: none; font-size: 15px" aria-hidden="true"></i></a>
+        </li>
+        </p>
       </ul>
-      <h1 style="margin: 5px 0 10px 40vh;">Địa Điểm</h1>
-      <h1>Ẩm thực</h1>
-      <h1>Lịch Sử</h1>
     </nav>
   </div>
-
 </header>
 <body>
   <main>
