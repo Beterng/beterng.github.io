@@ -26,13 +26,35 @@
     * {
       margin: 0;
       padding: 0;
+      margin: 0;
+      font-family: Arial, sans-serif;
     }
 
     body 
     {
-        margin: 0;
-        background-color: #f8f8f8;
-        font-family: Arial, sans-serif;
+      div .nav-1 {
+
+        font-family: 'Times New Roman', Times, serif;
+        margin-inline: 2vh;
+        margin-top: 10px;
+        color: black;
+      }
+
+      /* div .nav-1-r  {
+        float: right;
+        font-family: 'Times New Roman', Times, serif;
+        margin-inline: 2vh;
+        margin-top: 10px;
+        color: black;
+      }
+
+      div .right-nav {
+        float: lef;
+        text-align: ;
+      } */
+
+        text-align: center;
+
     }
 
     header
@@ -42,7 +64,7 @@
         box-shadow: black;
         text-align: center;
         box-sizing: border-box;
-        margin-top: 5vh;
+        margin-top: 25px;
         margin-inline: 21%;
         border: groove  black;
         text-decoration: none;
@@ -82,6 +104,15 @@
     @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 </style>  
 </head>
+<body>
+<div style="display: inline-flex; margin-inline:10vh ;">
+    <p class="nav-1">Country</p>
+    <p class="nav-1"> Languages</p>
+  <p class="nav-1 nav-1-r">Login</p>
+  <p class="nav-1 nav-1-r">Sign up</p>
+</div>
+
+</div>
 <header>
   <div id="img">
     <nav>
@@ -111,7 +142,6 @@
     </nav>
   </div>
 </header>
-<body>
   <main>
     <div style="text-align: center; margin-block: 10px; box-sizing: border-box; box-shadow: slategrey;">
       <img style="text-align: center; margin-block: 10px; box-sizing: border-box; box-shadow: slategrey 2px 2px 2px;" height="500px" src="../rescr/header.jpg">
@@ -123,5 +153,4 @@
   </main>
   
 </body>
-
 </html>
