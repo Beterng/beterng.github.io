@@ -15,7 +15,8 @@
 
 <style>
 
-.playwrite-gb-s {
+.playwrite-gb-s 
+{
   font-family: "Playwrite GB S", cursive;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -23,49 +24,55 @@
 }
 
 
-
-    body 
+    * 
     {
-        margin: 0;
-        background-color: #f8f8f8;
-        font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      box-sizing: border-box;
+      text-align: center;
     }
 
     header
     {
        
-      div {
-        box-shadow: black;
+      div 
+      {
         text-align: center;
-        box-sizing: border-box;
-        margin-top: 5vh;
-        margin-inline: 21%;
-        border: groove  black;
+        /* margin-top: 25px; */
         text-decoration: none;
-        border-radius: 20px;
+        box-sizing: border-box; 
+        /* transform-box:border-box; */
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        
       }
-      ul{
+      .nav-head 
+      {
         display: inline-flex;
         list-style-type: none;
       }
-      a
+      .nav-link
       {
-        padding: 15px;
+        padding:15px;
         padding-inline: 16px;
         display: inline-block;
         background-color: f8f8f8;
         font-family: 'Times New Roman', Times, serif;
-        border-radius: 20px;
       }
-      a:link {
+      .nav-link:link 
+      {
         text-decoration: none;
         color: black;
       }
 
-      a:hover
+      .nav-link:hover
       {
         color: white;
         background-color: black;
+      }
+
+      .nav-right {
+        text-align: right;
       }
     }
 
@@ -78,40 +85,58 @@
     @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 </style>  
 </head>
+<body>
 <header>
-  <div id="img">
+  <div>
     <nav>
-      <ul>
+      <ul class="nav-head">
         <p>
-        <li><a target="_blank">Địa Điểm <i class="fa fa-caret-down" style="font-size: 15px" aria-hidden="true"></i>
+        <li><a class="nav-link" arget="_blank">TRANG CHỦ <i class="fa fa-caret-down" style="font-size: 15px" aria-hidden="true"></i>
           <i class="fa fa-caret-up" style="display: none; font-size: 15px" aria-hidden="true"></i></a>
         </li>
         <li>
-          <a href="./am-thuc/" target="_self">Ẩm Thực <i class="fa fa-caret-down" style="font-size: 15px" aria-hidden="true"></i>
+          <a class="nav-link" href="./am-thuc/" target="_self">GIỚI THIỆU <i class="fa fa-caret-down" style="font-size: 15px" aria-hidden="true"></i>
           <i class="fa fa-caret-up" style="display: none; font-size: 15px" aria-hidden="true"></i></a>
         </li>
         <li>
-          <a target="_blank">Lịch Sử <i class="fa fa-caret-down" style="font-size: 15px" aria-hidden="true"></i>
+          <a class="nav-link" target="_blank">DU LỊCH <i class="fa fa-caret-down" style="font-size: 15px" aria-hidden="true"></i>
           <i class="fa fa-caret-up" style="display: none; font-size: 15px" aria-hidden="true"></i></a>
         </li>
         <li>
-          <a target="_blank">Đặt vé <i class="fa fa-caret-down" style="font-size: 15px" aria-hidden="true"></i>
+          <a class="nav-link" target="_blank">BẢNG GIÁ <i class="fa fa-caret-down" style="font-size: 15px" aria-hidden="true"></i>
           <i class="fa fa-caret-up" style="display: none; font-size: 15px" aria-hidden="true"></i></a>
         </li>
         <li>
-          <a target="_blank">Về Chúng Tôi <i class="fa fa-caret-down" style="font-size: 15px" aria-hidden="true"></i>
+          <a class="nav-link" target="_blank">LIÊN HỆ <i class="fa fa-caret-down" style="font-size: 15px" aria-hidden="true"></i>
           <i class="fa fa-caret-up" style="display: none; font-size: 15px" aria-hidden="true"></i></a>
         </li>
         </p>
       </ul>
     </nav>
   </div>
+
+  <!-- Hiddeen Sign In Sign Up-->
+  <div hidden>
+    <ul class="nav-head nav-right">
+    <li>
+      <a class="nav-link nav-link-r"target="_blank">Log in</a>
+    </li>
+    <li>
+      <a class="nav-link nav-link-r"target="_blank">Sign up</a>
+    </li>
+    </ul>
+  </div>
+
 </header>
-<body>
   <main>
-    
+    <div style="text-align: center; margin-block: 10px; box-sizing: border-box; box-shadow: slategrey;">
+      <img style="text-align: center; margin-block: 10px; box-sizing: border-box; box-shadow: slategrey 2px 2px 2px;" height="500px" src="../rescr/header.jpg">
+      <div id="text" style="margin-top: -300px; color:aliceblue;">
+      <h1>Hà Nội</h1>
+      <p>Thành phố mới</p>
+    </div>
+    </div>
   </main>
   
 </body>
-
 </html>
