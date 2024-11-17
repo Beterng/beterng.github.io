@@ -38,37 +38,33 @@
        
       div 
       {
-        box-shadow: black;
         text-align: center;
         /* margin-top: 25px; */
         text-decoration: none;
         box-sizing: border-box; 
         /* transform-box:border-box; */
-        box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.75);
-        border: solid slategrey 2px;
-        
+        /* box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37); */
       }
       .nav-head 
       {
         display: inline-flex;
         list-style-type: none;
       }
-      .nav-link
+      .nav-button
       {
         padding:15px;
         padding-inline: 16px;
         display: inline-block;
         background-color: f8f8f8;
         font-family: 'Times New Roman', Times, serif;
-        border-radius: 20px;
       }
-      .nav-link:link 
+      .nav-button:link 
       {
         text-decoration: none;
         color: black;
       }
 
-      .nav-link:hover
+      .nav-button:hover
       {
         color: white;
         background-color: black;
@@ -77,6 +73,7 @@
       .nav-right {
         text-align: right;
       }
+
     }
 
     .container 
@@ -92,28 +89,41 @@
 <header>
   <div>
     <nav>
+      <ul class="nav-head-1 languages" hidden>
+        <li>
+          <p class="nav-button">Languages</p>
+        </li>
+        <li>
+          <p class="nav-button singin singup">singin</p>
+        </li>
+        <li>
+          <p class="nav-button singup">singup</p>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="nav-head">
+    <nav>
       <ul class="nav-head">
-        <p>
-        <li><a class="nav-link" arget="_blank">TRANG CHỦ <i class="fa fa-caret-down" style="font-size: 15px" aria-hidden="true"></i>
+        <li><a class="nav-link nav-button" arget="_blank">TRANG CHỦ <i class="fa fa-caret-down" style="font-size: 15px" aria-hidden="true"></i>
           <i class="fa fa-caret-up" style="display: none; font-size: 15px" aria-hidden="true"></i></a>
         </li>
         <li>
-          <a class="nav-link" href="./am-thuc/" target="_self">GIỚI THIỆU <i class="fa fa-caret-down" style="font-size: 15px" aria-hidden="true"></i>
+          <a class="nav-link nav-button" href="./am-thuc/" target="_self">GIỚI THIỆU <i class="fa fa-caret-down" style="font-size: 15px" aria-hidden="true"></i>
           <i class="fa fa-caret-up" style="display: none; font-size: 15px" aria-hidden="true"></i></a>
         </li>
         <li>
-          <a class="nav-link" target="_blank">DU LỊCH <i class="fa fa-caret-down" style="font-size: 15px" aria-hidden="true"></i>
+          <a class="nav-link nav-button" target="_blank">DU LỊCH <i class="fa fa-caret-down" style="font-size: 15px" aria-hidden="true"></i>
           <i class="fa fa-caret-up" style="display: none; font-size: 15px" aria-hidden="true"></i></a>
         </li>
         <li>
-          <a class="nav-link" target="_blank">BẢNG GIÁ <i class="fa fa-caret-down" style="font-size: 15px" aria-hidden="true"></i>
+          <a class="nav-link nav-button" target="_blank">BẢNG GIÁ <i class="fa fa-caret-down" style="font-size: 15px" aria-hidden="true"></i>
           <i class="fa fa-caret-up" style="display: none; font-size: 15px" aria-hidden="true"></i></a>
         </li>
         <li>
-          <a class="nav-link" target="_blank">LIÊN HỆ <i class="fa fa-caret-down" style="font-size: 15px" aria-hidden="true"></i>
+          <a class="nav-link nav-button" target="_blank">LIÊN HỆ <i class="fa fa-caret-down" style="font-size: 15px" aria-hidden="true"></i>
           <i class="fa fa-caret-up" style="display: none; font-size: 15px" aria-hidden="true"></i></a>
         </li>
-        </p>
       </ul>
     </nav>
   </div>
@@ -143,3 +153,9 @@
   
 </body>
 </html>
+
+
+
+<!-- Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit rem, voluptatem exercitationem possimus ea culpa? Eum cupiditate doloremque amet aliquid atque. Similique saepe incidunt ipsa pariatur sit provident facere laboriosam.
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt laboriosam similique voluptatem culpa delectus placeat perferendis debitis corrupti, nobis eligendi? Iste quisquam enim nostrum nemo, quam commodi inventore corrupti impedit? -->
