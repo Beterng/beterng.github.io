@@ -82,10 +82,13 @@ header
   overflow: hidden;
   box-sizing: border-box; 
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  background-color: rgb(197, 190, 190);
+  /* filter: grayscale(50%); */
 }
 
 .text-header {
   margin-top: -55vh;
   font-family: "Dancing Script", serif;
   margin-bottom: 10px;
+  color: aliceblue;
 }
