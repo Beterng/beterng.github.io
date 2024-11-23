@@ -36,18 +36,18 @@
       </ul>
     </nav>
   </div>
+  
   <div class="nav-head">
+    <li class="nav-down">
+      <input class="nav-down" type="checkbox" id="checkbox_toggle" hidden/>
+      <label class="nav-down" for="checkbox_toggle" class="hamburger">&#9776;</label>
+    </li>
+    <li class="nav-down logo-title">
+      <img class="nav-down" height="40px" width="41px" style="margin-block: 2px; margin-left: auto;" src="./logo-title.ico">
+    </li>
     <nav>
-
-       
       <ul class="nav-head">
-        <li >
-          <input type="checkbox" id="checkbox_toggle" hidden/>
-          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-        </li>
-        <li>
-          <img height="40px" width="41px" style="margin-block: 2px; margin-left: auto;" src="./logo-title.ico">
-        </li>
+        
         <li><a class="nav-link nav-button" arget="_blank">TRANG CHỦ <i class="fa fa-caret-down" style="font-size: 15px" aria-hidden="true"></i>
           <i class="fa fa-caret-up" style="display: none; font-size: 15px" aria-hidden="true"></i></a>
         </li>
@@ -95,6 +95,18 @@
   </main>
   
 </body>
+
+<script>
+  function changePage(pageNum, ) {
+var i;
+var x = document.getElementsByClassName("page");
+for (i = 0; i < x.length; i++) {
+  x[i].style.display = "none";  
+}
+document.getElementById(pageNum).style.display = "block";  
+}
+</script>
+
 </html>
 
 
