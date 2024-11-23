@@ -104,7 +104,7 @@ header
     .nav-down {
       margin-block: auto;
       margin-inline: 0.6rem;
-      font-size: auto;
+      font-size: 20px;
     }
   }
 
@@ -139,4 +139,38 @@ header
   color: aliceblue;
   font-size: 20px;
   margin-inline: auto;
+}
+
+.container {
+  width: 0px;
+  height: auto;
+  margin-top: auto;
+  display: inline-block;
+  cursor: pointer;
+  background-color: rgb(122, 31, 31);
+  margin-block: 11px;
+  margin-inline-start: 4rem;
+
+}
+
+.bar1, .bar2, .bar3 {
+
+  width: 28px;
+  height: 4px;
+  background-color: #333;
+   margin-block: 7px;
+   margin-top: 0;
+  transition: 0.4s;
+  position: relative;
+  margin-inline: 0;
+}
+
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
 }

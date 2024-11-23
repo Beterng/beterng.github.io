@@ -24,9 +24,12 @@
 <header>
   
   <div class="nav-head">
-    <li class="nav-down">
-      <input class="nav-down" type="checkbox" id="checkbox_toggle" hidden/>
-      <label class="nav-down" for="checkbox_toggle" class="hamburger">&#9776;</label>
+    <li>
+      <div class="container" onclick="openmenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
     </li>
     <li class="nav-down logo-title">
       <img class="nav-down logo-title" height="40px" width="41px" style="margin-block: 2px; margin-left: auto;" src="./logo-title.ico">
@@ -56,39 +59,18 @@
       </ul>
     </nav>
 
-          <li>
-<!--
-            
+    <li class="nav-down">
+      <input class="setting" type="checkbox" id="checkbox_toggle_setting" hidden/>
+      <label class="setting" for="checkbox_toggle_setting" class="setting_menu" style="font-size: 20px;"><i class="fa-solid fa-gear"></i></label>
+      
+    </li>
+      <li>
 
--->     <!-- <p class="nav-button nav-head-2 languages">   -->
-              
-              <form hidden>
-              <label for="lang-switch">
-                  <span lang="ko" hidden>언어</span>
-                  <span lang="en"><img src="../rescr/language-icon/korea.png" style="width: 25px; height: auto;"></span>
-              </label>
-              <select id="lang-switch">
-                  <option value="en">English</option>
-                  <option value="ko" selected>한국어</option>
-              </select>
-          </form>
-          
-          <p>
-              <span lang="ko" hidden>한국어 텍스트</span>
-              <span lang="en" hidden>Text in English</span>
-          </p>
-        <!-- </p> -->
-<!--
-        
-
-
--->
-
-          </li>
-          <li>
+      </li>
+          <li hidden>
             <p class="nav-button singin singup languages">singin</p>
           </li>
-          <li>
+          <li hidden>
             <p class="nav-button singup languages">singup</p>
           </li>
 
@@ -118,7 +100,11 @@
   </main>
   
 
-
+  <div class="container" onclick="openmenu(this)">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
 </body>
 
 <script>
@@ -129,6 +115,10 @@ for (i = 0; i < x.length; i++) {
   x[i].style.display = "none";  
 }
 document.getElementById(pageNum).style.display = "block";  
+}
+
+function openmenu(x) {
+  x.classList.toggle("change");
 }
 </script>
 
