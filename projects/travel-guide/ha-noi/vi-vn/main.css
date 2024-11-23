@@ -89,17 +89,27 @@ header
         text-align: right;
       }
 
-      /* The NAV DOWN IN THE WEEBSITE */
+      .nav-head-2 {
+        margin-inline-start: auto;
+      }
+
+      nav {
+        margin-inline: auto;
+      }
       
     }
 
+          /* The NAV DOWN IN THE WEEBSITE */
+  div {
     .nav-down {
-      margin-top: 11px;
+      margin-block: auto;
       margin-inline: 0.6rem;
+      font-size: auto;
     }
+  }
 
     .logo-title {
-      margin-block: 0px;
+      margin-block: 0;
       margin-left: 0.6rem;
       margin-right: auto;
 

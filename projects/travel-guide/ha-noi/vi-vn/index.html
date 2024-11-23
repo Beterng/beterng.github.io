@@ -16,26 +16,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Galada&family=Imperial+Script&family=Playwrite+GB+S:wght@100..400&display=swap" rel="stylesheet">
 <link href="../rescr/font/fonts.css" rel="stylesheet">
 <link href="../rescr/font/link.css" rel="stylesheet">
+<!-- <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script> -->
 <script src="./script.js"></script> 
-
+<script src="./languages.js"></script> 
 </head>
 <body>
 <header>
-  <div>
-    <nav>
-      <ul class="nav-head-1 languages" hidden>
-        <li>
-          <p class="nav-button">Languages</p>
-        </li>
-        <li>
-          <p class="nav-button singin singup">singin</p>
-        </li>
-        <li>
-          <p class="nav-button singup">singup</p>
-        </li>
-      </ul>
-    </nav>
-  </div>
   
   <div class="nav-head">
     <li class="nav-down">
@@ -43,7 +29,7 @@
       <label class="nav-down" for="checkbox_toggle" class="hamburger">&#9776;</label>
     </li>
     <li class="nav-down logo-title">
-      <img class="nav-down" height="40px" width="41px" style="margin-block: 2px; margin-left: auto;" src="./logo-title.ico">
+      <img class="nav-down logo-title" height="40px" width="41px" style="margin-block: 2px; margin-left: auto;" src="./logo-title.ico">
     </li>
     <nav>
       <ul class="nav-head">
@@ -69,6 +55,43 @@
         </li>
       </ul>
     </nav>
+
+          <li>
+<!--
+            
+
+-->     <!-- <p class="nav-button nav-head-2 languages">   -->
+              
+              <form hidden>
+              <label for="lang-switch">
+                  <span lang="ko" hidden>언어</span>
+                  <span lang="en"><img src="../rescr/language-icon/korea.png" style="width: 25px; height: auto;"></span>
+              </label>
+              <select id="lang-switch">
+                  <option value="en">English</option>
+                  <option value="ko" selected>한국어</option>
+              </select>
+          </form>
+          
+          <p>
+              <span lang="ko" hidden>한국어 텍스트</span>
+              <span lang="en" hidden>Text in English</span>
+          </p>
+        <!-- </p> -->
+<!--
+        
+
+
+-->
+
+          </li>
+          <li>
+            <p class="nav-button singin singup languages">singin</p>
+          </li>
+          <li>
+            <p class="nav-button singup languages">singup</p>
+          </li>
+
   </div>
 
   <!-- Hiddeen Sign In Sign Up-->
@@ -94,6 +117,8 @@
     </div>
   </main>
   
+
+
 </body>
 
 <script>
