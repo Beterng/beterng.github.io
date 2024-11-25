@@ -142,15 +142,14 @@ header
 }
 
 .container {
-  width: 0px;
-  height: auto;
-  margin-top: auto;
+  width: 1.8rem;
+  height: 1.8rem;
+  margin-top: 0;
   display: inline-block;
   cursor: pointer;
-  background-color: rgb(122, 31, 31);
+  background-color: rgba(0, 0, 0, 0);
   margin-block: 11px;
   margin-inline-start: 4rem;
-
 }
 
 .bar1, .bar2, .bar3 {
