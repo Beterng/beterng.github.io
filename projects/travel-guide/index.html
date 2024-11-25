@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="3;url=/projects/travel-guide/ha-noi/vi-vn/">
+    <title>Preparing for home</title>
+   <style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f8f8f8;
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+    .container {
+        text-align: center;
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+</style>
+<script>
+    var timeleft = 3;
+    var countdownTimer = setInterval(function(){
+        document.getElementById("countdown").innerHTML = "The website will redirect after " + timeleft + " seconds.";
+        timeleft -= 1;
+        if(timeleft <= 0){
+            clearInterval(countdownTimer);
+            document.getElementById("countdown").innerHTML = "Changing direction..."
+        }
+    }, 1000);
+</script>
+
+</head>
+<body>
+    <main>
+        <h1 style="font-family: 'Bebas Neue', sans-serif; font-size: 6vh;"></strong>Plese wait</strong></h1>
+        <h2 style="font-family: 'Bebas Neue', sans-serif; font-size: 4vh">You have been redirecting</h1>
+        <p id="countdown"></p>
+        
+    </main>
+</body>
+</html>
