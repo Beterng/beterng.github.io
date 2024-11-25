@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./logo-title.ico">
     <title>Hanoi - Vietnam tourist destination</title>
     <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -12,145 +13,119 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Galada&family=Imperial+Script&family=Playwrite+GB+S:wght@100..400&display=swap" rel="stylesheet">
-
-<style>
-
-.playwrite-gb-s {
-  font-family: "Playwrite GB S", cursive;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-
-
-    * {
-      margin: 0;
-      padding: 0;
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
-
-    body 
-    {
-      div .nav-1 {
-
-        font-family: 'Times New Roman', Times, serif;
-        margin-inline: 2vh;
-        margin-top: 10px;
-        color: black;
-      }
-
-      /* div .nav-1-r  {
-        float: right;
-        font-family: 'Times New Roman', Times, serif;
-        margin-inline: 2vh;
-        margin-top: 10px;
-        color: black;
-      }
-
-      div .right-nav {
-        float: lef;
-        text-align: ;
-      } */
-
-        text-align: center;
-
-    }
-
-    header
-    {
-       
-      div {
-        box-shadow: black;
-        text-align: center;
-        box-sizing: border-box;
-        margin-top: 25px;
-        margin-inline: 21%;
-        border: groove  black;
-        text-decoration: none;
-        border-radius: 20px;
-      }
-      ul{
-        display: inline-flex;
-        list-style-type: none;
-      }
-      a
-      {
-        padding:15px;
-        padding-inline: 16px;
-        display: inline-block;
-        background-color: f8f8f8;
-        font-family: 'Times New Roman', Times, serif;
-        border-radius: 20px;
-      }
-      a:link {
-        text-decoration: none;
-        color: black;
-      }
-
-      a:hover
-      {
-        color: white;
-        background-color: black;
-      }
-    }
-
-    .container 
-    {
-        text-align: center;
-    }
-
-
-    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-</style>  
+<link href="https://fonts.googleapis.com/css2?family=Galada&family=Imperial+Script&family=Playwrite+GB+S:wght@100..400&display=swap" rel="stylesheet">
+<link href="../rescr/font/fonts.css" rel="stylesheet">
+<link href="../rescr/font/link.css" rel="stylesheet">
+<!-- <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script> -->
+<script src="./script.js"></script> 
+<script src="./languages.js"></script> 
 </head>
 <body>
-<div style="display: inline-flex; margin-inline:10vh ;">
-    <p class="nav-1">Country</p>
-    <p class="nav-1"> Languages</p>
-  <p class="nav-1 nav-1-r">Login</p>
-  <p class="nav-1 nav-1-r">Sign up</p>
-</div>
-
-</div>
 <header>
-  <div id="img">
+  
+  <div class="nav-head">
+    <li>
+      <div class="container" onclick="openmenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </li>
+    <li class="nav-down logo-title">
+      <img class="nav-down logo-title" height="40px" width="41px" style="margin-block: 2px; margin-left: auto;" src="./logo-title.ico">
+    </li>
     <nav>
-      <ul>
-        <p>
-        <li><a target="_blank">TRANG CHỦ <i class="fa fa-caret-down" style="font-size: 15px" aria-hidden="true"></i>
+      <ul class="nav-head">
+        
+        <li><a class="nav-link nav-button" arget="_blank">TRANG CHỦ <i class="fa fa-caret-down" style="font-size: 15px" aria-hidden="true"></i>
           <i class="fa fa-caret-up" style="display: none; font-size: 15px" aria-hidden="true"></i></a>
         </li>
         <li>
-          <a href="./am-thuc/" target="_self">GIỚI THIỆU <i class="fa fa-caret-down" style="font-size: 15px" aria-hidden="true"></i>
+          <a class="nav-link nav-button" href="https://github.com/beterng/" target="_self">GIỚI THIỆU <i class="fa fa-caret-down" style="font-size: 15px" aria-hidden="true"></i>
           <i class="fa fa-caret-up" style="display: none; font-size: 15px" aria-hidden="true"></i></a>
         </li>
         <li>
-          <a target="_blank">DU LỊCH <i class="fa fa-caret-down" style="font-size: 15px" aria-hidden="true"></i>
+          <a class="nav-link nav-button" target="_blank" href="https://github.com/beterng/">DU LỊCH <i class="fa fa-caret-down" style="font-size: 15px" aria-hidden="true"></i>
           <i class="fa fa-caret-up" style="display: none; font-size: 15px" aria-hidden="true"></i></a>
         </li>
         <li>
-          <a target="_blank">BẢNG GIÁ <i class="fa fa-caret-down" style="font-size: 15px" aria-hidden="true"></i>
+          <a class="nav-link nav-button" target="_blank">BẢNG GIÁ <i class="fa fa-caret-down" style="font-size: 15px" aria-hidden="true"></i>
           <i class="fa fa-caret-up" style="display: none; font-size: 15px" aria-hidden="true"></i></a>
         </li>
         <li>
-          <a target="_blank">LIÊN HỆ <i class="fa fa-caret-down" style="font-size: 15px" aria-hidden="true"></i>
+          <a class="nav-link nav-button" target="_blank">LIÊN HỆ <i class="fa fa-caret-down" style="font-size: 15px" aria-hidden="true"></i>
           <i class="fa fa-caret-up" style="display: none; font-size: 15px" aria-hidden="true"></i></a>
         </li>
-        </p>
       </ul>
     </nav>
+
+    <li class="nav-down">
+      <input class="setting" type="checkbox" id="checkbox_toggle_setting" hidden/>
+      <label class="setting" for="checkbox_toggle_setting" class="setting_menu" style="font-size: 20px;"><i class="fa-solid fa-gear"></i></label>
+      
+    </li>
+      <li>
+
+      </li>
+          <li hidden>
+            <p class="nav-button singin singup languages">singin</p>
+          </li>
+          <li hidden>
+            <p class="nav-button singup languages">singup</p>
+          </li>
+
   </div>
+
+  <!-- Hiddeen Sign In Sign Up-->
+  <div hidden>
+    <ul class="nav-head nav-right">
+    <li>
+      <a class="nav-link nav-link-r"target="_blank">Log in</a>
+    </li>
+    <li>
+      <a class="nav-link nav-link-r"target="_blank">Sign up</a>
+    </li>
+    </ul>
+  </div>
+
 </header>
   <main>
-    <div style="text-align: center; margin-block: 10px; box-sizing: border-box; box-shadow: slategrey;">
-      <img style="text-align: center; margin-block: 10px; box-sizing: border-box; box-shadow: slategrey 2px 2px 2px;" height="500px" src="../rescr/header.jpg">
-      <div id="text" style="margin-top: -300px; color:aliceblue;">
-      <h1>Hà Nội</h1>
-      <p>Thành phố mới</p>
+    <div class="header img-header" style="color:black;">
+      <img src="../rescr/header-2.jpg" width="100%" style="height: 100vh;">
     </div>
+    <div class="text-header">
+      <h1 class="text-header" style="font-size: 40px;">Khám phá Hà Nội</h1>
+      <p  class="text-header" style="margin-top: 0vh; font-family: 'Playwrite GB S', cursive;  margin-inline: auto; color: aliceblue; max-width: 90vh;">Hà Nội, thủ đô ngàn năm văn hiến, là điểm đến hấp dẫn du khách với những danh lam thắng cảnh nổi tiếng, nền ẩm thực phong phú và con người thân thiện</p>
     </div>
   </main>
   
+
+  <div class="container" onclick="openmenu(this)">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
 </body>
+
+<script>
+  function changePage(pageNum, ) {
+var i;
+var x = document.getElementsByClassName("page");
+for (i = 0; i < x.length; i++) {
+  x[i].style.display = "none";  
+}
+document.getElementById(pageNum).style.display = "block";  
+}
+
+function openmenu(x) {
+  x.classList.toggle("change");
+}
+</script>
+
 </html>
+
+
+
+<!-- Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit rem, voluptatem exercitationem possimus ea culpa? Eum cupiditate doloremque amet aliquid atque. Similique saepe incidunt ipsa pariatur sit provident facere laboriosam.
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt laboriosam similique voluptatem culpa delectus placeat perferendis debitis corrupti, nobis eligendi? Iste quisquam enim nostrum nemo, quam commodi inventore corrupti impedit? -->
