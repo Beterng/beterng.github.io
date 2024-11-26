@@ -1,188 +1,188 @@
 @media (max-width: 768px) {
 
-    * {
-        margin: 0;
-        padding: 0;
-        font-family:'Times New Roman', Times, serif ;
-        text-align: center;
-    }
-    
-    /* main {
-        min-height: 100vh;
-        background: linear-gradient(to right top, #65dfc9, #6cdbeb);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    
-    }
-    .glass {
-        background: white;
-        width: 60%;
-        height: 80vh;
-        background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.3));
-    } */
-    
-    header
+  * {
+      margin: 0;
+      padding: 0;
+      font-family:'Times New Roman', Times, serif ;
+      text-align: center;
+  }
+  
+  /* main {
+      min-height: 100vh;
+      background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+  }
+  .glass {
+      background: white;
+      width: 60%;
+      height: 80vh;
+      background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.3));
+  } */
+  
+  header
+      {
+         
+        div 
         {
-           
-          div 
-          {
 
-            font-size: 14px;
-            text-align: center;
-            /* margin-top: 25px; */
-            text-decoration: none;
-            box-sizing: border-box;
-            /* transform-box:border-box; */
-            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-            position: fixed;
-            justify-content: center;
-            width: 100%; 
-            left: 0; right: 0; 
-            background-color: rgba(255, 255, 255, 0.37);
-            margin-top: 20rem;
-            /* overflow: auto; */
-          }
-          .nav-head 
-          {
-            display: flex;
-            list-style-type: none;
-          }
-          .nav-button
-          {
-            display: none;
-            visibility: hidden;
-            padding:15px;
-            padding-inline: 16px;
-            display: inline-block;
-            background-color: f8f8f8;
-            font-family: 'Times New Roman', Times, serif;
-          }
-          .nav-button:link 
-          {
-            text-decoration: none;
-            color: black;
-            transition: color 0.3s;
-          }
-    
-          .nav-button:hover
-          {
-            color: whitesmoke;
-            background-color: rgba(27, 51, 66, 0.384);
-            transition: color 0.3s;
-          }
-    
-          .nav-button:visited 
-          {
-            text-decoration: none;
-            color: black;
-          }
-    
-          .nav-button:visited:hover
-          {
-            text-decoration: none;
-            color: white;
-          }
-    
-          .nav-button:focus 
-          {
-            text-decoration: none;
-            color: black;
-          }
-    
-    
-          .nav-right {
-            text-align: right;
-          }
-    
-          .nav-head-2 {
-            margin-inline-start: auto;
-          }
-    
-          nav {
-            margin-inline: auto;
-          }
-          
+          font-size: 14px;
+          text-align: center;
+          /* margin-top: 25px; */
+          text-decoration: none;
+          box-sizing: border-box;
+          /* transform-box:border-box; */
+          box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+          position: fixed;
+          justify-content: center;
+          width: 100%; 
+          left: 0; right: 0; 
+          background-color: rgba(255, 255, 255, 0.37);
+          margin-top: 20rem;
+          /* overflow: auto; */
         }
-    
-              /* The NAV DOWN IN THE WEEBSITE */
-      div {
-        .nav-down {
-          margin-block: auto;
-          margin-inline: 0.6rem;
-          font-size: 20px;
+        .nav-head 
+        {
+          display: flex;
+          list-style-type: none;
         }
+        .nav-button
+        {
+          display: none;
+          visibility: hidden;
+          padding:15px;
+          padding-inline: 16px;
+          display: inline-block;
+          background-color: f8f8f8;
+          font-family: 'Times New Roman', Times, serif;
+        }
+        .nav-button:link 
+        {
+          text-decoration: none;
+          color: black;
+          transition: color 0.3s;
+        }
+  
+        .nav-button:hover
+        {
+          color: whitesmoke;
+          background-color: rgba(27, 51, 66, 0.384);
+          transition: color 0.3s;
+        }
+  
+        .nav-button:visited 
+        {
+          text-decoration: none;
+          color: black;
+        }
+  
+        .nav-button:visited:hover
+        {
+          text-decoration: none;
+          color: white;
+        }
+  
+        .nav-button:focus 
+        {
+          text-decoration: none;
+          color: black;
+        }
+  
+  
+        .nav-right {
+          text-align: right;
+        }
+  
+        .nav-head-2 {
+          margin-inline-start: auto;
+        }
+  
+        nav {
+          margin-inline: auto;
+        }
+        
       }
-    
-        .logo-title {
-          margin-block: 0;
-          margin-left: 0.6rem;
-          margin-right: auto;
-    
-        }
-    
-        .container 
-        {
-            text-align: center;
-        }
-    
-    .img-header {
-      width: 100%;
-      /* height: 80vh;  */
-      height: auto; 
-      min-height: 80vh;
-      overflow: hidden;
-      box-sizing: border-box; 
-      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-      background-color: rgb(197, 190, 190);
-      /* filter: grayscale(50%); */
-      margin-top: -20rem;
+  
+            /* The NAV DOWN IN THE WEEBSITE */
+    div {
+      .nav-down {
+        margin-block: auto;
+        margin-inline: 0.6rem;
+        font-size: 20px;
+      }
     }
-    
-    .text-header {
-      margin-top: -40vh;
-      font-family: "Dancing Script", serif;
-      color: aliceblue;
-      font-size: 20px;
-      margin-inline: auto;
-    }
-    
-    .container {
-      width: 2.2rem;
-      height: 2.2rem;
-      margin-top: 0;
-      display: inline-block;
-      cursor: pointer;
-      background-color: rgba(0, 0, 0, 0);
-      margin-block: 1.4rem;
-      margin-inline-start: 4rem;
+  
+      .logo-title {
+        margin-block: 0;
+        margin-left: 0.6rem;
+        margin-right: auto;
+  
+      }
+  
+      .container 
+      {
+          text-align: center;
+      }
+  
+  .img-header {
+    width: 100%;
+    /* height: 80vh;  */
+    height: auto; 
+    min-height: 80vh;
+    overflow: hidden;
+    box-sizing: border-box; 
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    background-color: rgb(197, 190, 190);
+    /* filter: grayscale(50%); */
+    margin-top: -20rem;
+  }
+  
+  .text-header {
+    margin-top: -40vh;
+    font-family: "Dancing Script", serif;
+    color: aliceblue;
+    font-size: 20px;
+    margin-inline: auto;
+  }
+  
+  .container {
+    width: 2.2rem;
+    height: 2.2rem;
+    margin-top: 0;
+    display: inline-block;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    margin-block: 1.4rem;
+    margin-inline-start: 4rem;
 
-    }
-    
-    .bar1, .bar2, .bar3 {
-    
-      width: 42px;
-      height: 5px;
-      background-color: #333;
-       margin-block: 7px;
-       margin-top: 0;
-      transition: 0.4s;
-      position: relative;
-      margin-inline: 0;
-    }
-    
-    .change .bar1 {
-      transform: translate(0, 11px) rotate(-45deg);
-    }
-    
-    .change .bar2 {opacity: 0;}
-    
-    .change .bar3 {
-      transform: translate(0, -11px) rotate(45deg);
-    }
+  }
+  
+  .bar1, .bar2, .bar3 {
+  
+    width: 42px;
+    height: 5px;
+    background-color: #333;
+     margin-block: 7px;
+     margin-top: 0;
+    transition: 0.4s;
+    position: relative;
+    margin-inline: 0;
+  }
+  
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
 
-    .nav-down-button {
-        visibility: unset;
-    }
+  .nav-down-button {
+      visibility: unset;
+  }
 
 }
