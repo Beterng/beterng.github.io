@@ -109,6 +109,10 @@ header div {
     margin-inline: 0.6rem;
     font-size: 20px;
   }
+  .setting {
+    margin-inline-end: 6px;
+    margin-inline-start: 0px;
+  }
 }
 
   .logo-title {
