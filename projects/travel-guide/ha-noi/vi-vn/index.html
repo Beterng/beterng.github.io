@@ -26,13 +26,13 @@
   
   <div class="nav-head">
     <li class="nav-down-button">
-      <div class="container" onclick="openmenu(this)" >
+      <div class="container nav-menu" onclick="openmenu(this)" >
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
       </div>
     </li>
-    <li class="nav-down logo-title">
+    <li class="nav-down logo-title" hidden>
       <img class="nav-down logo-title" height="40px" width="41px" style="margin-block: 2px; margin-left: auto;" src="./logo-title.ico">
     </li>
     <nav>
@@ -91,7 +91,7 @@
 
 </header>
     <div class="header img-header video-header" style="color:black;">
-      <img src="../rescr/header-2.jpg" width="100%" style="height: 100vh; ">
+      <img src="../rescr/header-2.jpg" width="100%" height="900px">
       <video class="header img-header video-header" src="../rescr/oàn cảnh Hà Nội Hanoi from above Flycam 4K Hà Nội Hachi8Media_1080.mp4" title="Hà Nội Landscape View" alt="The video about Ha Noi in VietNam" width="100%" style="height: 100vh;" hidden></video>
     </div>
     <div class="text-header">
@@ -114,8 +114,25 @@ for (i = 0; i < x.length; i++) {
 document.getElementById(pageNum).style.display = "block";  
 }
 
+
 function openmenu(x) {
   x.classList.toggle("change");
+  if (x.classList.toggle("change") == false) {
+    console.log("It will show when it true.");
+    x.classList.toggle("change");
+    //Code open menu in here
+
+    
+    
+    }
+    else if (x.classList.toggle("change") != true) {
+      console.log("It will close when it false");
+      //code close menu in here
+      
+
+    }
+
+
 }
 </script>
 

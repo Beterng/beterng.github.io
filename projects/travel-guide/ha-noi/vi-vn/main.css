@@ -103,7 +103,7 @@ header
   }
 
         /* The NAV DOWN IN THE WEEBSITE */
-div {
+header div {
   .nav-down {
     margin-block: auto;
     margin-inline: 0.6rem;
@@ -117,16 +117,15 @@ div {
     margin-right: auto;
 
   }
+
+
 .img-header {
 width: 100%;
-/* height: 80vh;  */
 height: auto; 
-min-height: 80vh;
+min-height: 200px;
 overflow: hidden;
 box-sizing: border-box; 
 box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-
-/* filter: grayscale(50%); */
 margin-top: -20rem;
 }
 
