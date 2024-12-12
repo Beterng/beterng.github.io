@@ -1,17 +1,123 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preparing for home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+   <style>
+    
+    * {
+        margin: 0;
+        padding: 0;
+        color: black;
+    }
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+
+    div {
+        
+        margin-block: 3vh;
+        display: inline-block;
+        margin-inline: 2vh;
+        padding: 1vh;
+        height: auto;
+        width: 80%;
+        background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.6px);
+    -webkit-backdrop-filter: blur(4.6px);
+border-radius: 20px;
+transition: 0.5s;
+margin-top: 0px;    
+}
+
+    p, h6, img {
+        justify-content: center;
+        align-items: center;
+        align-items: center;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 10px;
+            margin-inline: 2vh;
+            margin: 1vh;
+        }
+
+            h6 {
+                font-size: 24px;
+                margin: 1vh;
+            }
+
+            img {
+                border-radius: 100%;
+            }
+
+
+        span, .tabs {
+            display: inline-block;
+            padding: 7px;
+            font-size: 18px;
+            display: none;
+            margin-top: 0px;
+            transform: 1.3s;
+        }
+
+
+    .container {
+        text-align: center;
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+</style>
+<script>
+
+    function changestatus(as, ) {
+        var i;
+        x = document.getElementsByClassName('ass');
+        for (let index = 0; index < x.length; index++) {
+            x[index].style.display = 'none';
+            
+        }
+        document.getElementById(as).style.display = 'inline-block';
+}
+</script>
+
+</head>
 <body>
-    <nav class="navbar">
-  
-    <!-- LOGO -->
-      <div class="logo">MUO</div>
-  
-      <!-- NAVIGATION MENU -->
-      <ul class="nav-links">
-        <!-- USING CHECKBOX HACK -->
-        <input type="checkbox" id="checkbox_toggle" />
-        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-  
-        <!-- NAVIGATION MENUS -->
-        <div class="menu">...</div>
-      </ul>
-    </nav>
-  </body>
+    <main>
+
+        <div  label="box1 page" class="box" id="box1">
+            <h6  onclick="changestatus('as1')" class="text content">Hà Nội có gì thú vị?</h6>
+            <span class="ass" id="as1">
+                <p>Hà Nội là nơi hội tụ văn hóa, lịch sử và ẩm thực độc đáo. Bạn sẽ không bao giờ chán!</p>
+            </span>
+        </div>
+        <div  label="box2 page" class="box" id="box2">
+            <h6  onclick="changestatus('as2')" class="text content">Ở Hà Nội nên thử món ăn nào?</h6>
+            <span class="ass" id="as2">
+                <p>Phở, bún chả, và bánh mì là những món không thể bỏ qua khi đến Hà Nội!</p>
+            </span>
+        </div>
+        <div  label="box3 page" class="box" id="box3">
+            <h6  onclick="changestatus('as3')" class="text content">Hà Nội có an toàn không?</h6>
+            <span class="ass" id="as3">
+                <p>Hà Nội là một thành phố an toàn, nhưng hãy luôn cẩn thận với tài sản cá nhân!</p>
+            </span>
+        </div>
+
+    </main>
+</body>
+</html>
