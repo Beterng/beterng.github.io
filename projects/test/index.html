@@ -1,17 +1,76 @@
-<body>
-    <nav class="navbar">
-  
-    <!-- LOGO -->
-      <div class="logo">MUO</div>
-  
-      <!-- NAVIGATION MENU -->
-      <ul class="nav-links">
-        <!-- USING CHECKBOX HACK -->
-        <input type="checkbox" id="checkbox_toggle" />
-        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-  
-        <!-- NAVIGATION MENUS -->
-        <div class="menu">...</div>
-      </ul>
-    </nav>
-  </body>
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preparing for home</title>
+   <style>
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+    body {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f8f8f8;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        overflow-x: auto;
+        /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL65s1tudn-7TPBAxyx0MmVAQjPB9vzqVILL1i-q3VnzbFK9NZ"); */
+
+    }
+
+    p {
+      background-color: whitesmoke;
+      margin-inline: 5vh;
+      box-shadow: rgba(0, 0, 0, 0.1);
+      background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+
+      border-radius: 2vh;
+      padding: 1vh;
+    }
+    .container {
+        text-align: center;
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+</style>
+<script>
+    var timeleft = 3;
+    var countdownTimer = setInterval(function(){
+        document.getElementById("countdown").innerHTML = "The website will redirect after " + timeleft + " seconds.";
+        timeleft -= 1;
+        if(timeleft <= 0){
+            clearInterval(countdownTimer);
+            document.getElementById("countdown").innerHTML = "Changing direction..."
+        }
+    }, 1000);
+
+
+    
+</script>
+
+</head>
+
+<div class="item1">
+        <p>"Sống ở Hà Nội, khi buồn bản thân tôi thường ra phố, ngắm nhìn cuộc sống qua từng chi tiết nhỏ, và nỗi buồn dường như tan biến theo dòng xe qua lại."</p>
+</div>
+
+<div class="item2">
+  <p>"Mùa Thu Hà Nội thật đẹp, nhưng số năm ế của tôi lại kéo dài như dòng sông Volga vậy."</p>
+</div>
+
+
+        <div class="item3">
+          <p>"Hà Nội trong tôi là hương thơm của mùa hoa bưởi, là âm điệu dịu dàng của cuộc sống. Tôi yêu Hà Nội bốn mùa, như yêu chính bản thân tôi giữa thủ đô sôi động.</p>
+
+        </div>
+
+</body>
+</html>
