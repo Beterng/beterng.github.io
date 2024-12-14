@@ -27,12 +27,12 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
         cache-dependency-path: |
-          /projects/vuejs/letmecook/package-lock.json
-          /projects/vuejs/letmecook/package.json
-          /projects/vuejs/letmecook/jsconfig.json
-          /projects/vuejs/letmecook/build-script.json
+          ./projects/vuejs/letmecook/package-lock.json
+          ./projects/vuejs/letmecook/package.json
+          ./projects/vuejs/letmecook/jsconfig.json
+          ./projects/vuejs/letmecook/build-script.json
     - run: npm install vue
-    - run: cd letmecook
+    - run: cd ./project/letmecook/
     - run: npm install
     - run: npm run build
     - run: npm run preview
