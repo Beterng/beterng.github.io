@@ -26,8 +26,13 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-        cache-dependency-path: 'projects/letmecook/package-lock.json'
+        cache-dependency-path: |
+        'projects/letmecook/package-lock.json'
+        'projects/letmecook/package.json'
+        'projects/letmecook/jsconfig.json'
+        'build-script.json'
     - run: cd projects/letmecook/
     - run: npm install vue
-    - run: npm run test
+    - run: npm run build
+    - run: npm run dev
 
