@@ -27,10 +27,10 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
         cache-dependency-path: |
-          ./projects/vuejs/letmecook/package-lock.json
-          ./projects/vuejs/letmecook/package.json
-          ./projects/vuejs/letmecook/jsconfig.json
-          ./projects/vuejs/letmecook/build-script.json
+          /workspaces/beterng.github.io/projects/vuejs/letmecook/package-lock.json
+          /workspaces/beterng.github.io/projects/vuejs/letmecook/package.json
+          /workspaces/beterng.github.io/projects/vuejs/letmecook/jsconfig.json
+          /workspaces/beterng.github.io/projects/vuejs/letmecook/build-script.json
     - run: npm install vue
     - run: cd letmecook
     - run: npm install
