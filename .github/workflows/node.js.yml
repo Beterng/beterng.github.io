@@ -30,11 +30,11 @@ jobs:
           ./projects/letmecook/package-lock.json
           ./projects/letmecook/package.json
           ./projects/letmecook/jsconfig.json
-        ./projects/letmecook/build-script.json
+          ./projects/letmecook/build-script.json
     - run: cd ./project/vuejs/
     - run: npm install vue
     - run: cd letmecook
     - run: npm install
     - run: npm run build
-    - run: npm run dev
+    - run: npm run preview
 
