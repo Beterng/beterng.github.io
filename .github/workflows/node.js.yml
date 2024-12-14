@@ -32,7 +32,7 @@ jobs:
           ./projects/vuejs/letmecook/jsconfig.json
           ./projects/vuejs/letmecook/build-script.json
     - run: npm install vue
-    - run: cd ./letmecook
+    - run:
     - run: npm install
     - run: npm run build
     - run: npm run preview
