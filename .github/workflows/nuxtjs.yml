@@ -62,7 +62,9 @@ jobs:
       - name: Restore cache
         uses: actions/cache@v4
         with:
-          path: /projects/nuxjs/test1 # |
+          path: Breadcrumbs
+
+    beterng.github.io/projects/letmecook # |
             dist
             .nuxt
           key: ${{ runner.os }}-nuxt-build-${{ hashFiles('dist') }}
