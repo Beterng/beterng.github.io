@@ -15,10 +15,25 @@
   }
 </style>
 
-<h1> Hello World</h1>
 </head>
 <body>
+  <div id="app">
+    <h1>    {{message}}</h1>
+
+  </div>
+  <script>
+
+    const app = Vue.createApp({
+      data() {
+        return {
+          message: "Hello World!"
+        }
+      }
+    })
   
+   app.mount('#app')
+  
+  </script> 
 </body>
 </html>
 
