@@ -4,11 +4,153 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shoot The Blocks</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        canvas {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 </head>
-<body>
-    <canvas>
-        <var><data value="sdf">kofk</data>
-        </var>
+<body height="100vh" width="100%" style="background-color: rgb(3, 0, 28); overflow: hidden;">
+    
+
+    <canvas id="myCanvas">
+        Sorry, your browser does not support canvas.
+        <script>
+            function startGame() {
+    //Hàm startGame() gọi đến method start() của đối tượng myGameArea
+    myGameArea.start();
+}
+
+var myGameArea = {
+    canvas : document.createElement("canvas"),
+    start : function() {
+        // xác định độ rộng của vùng game
+        this.canvas.width = 480;
+
+        // xác định độ cao của vùng game
+        this.canvas.height = 270;
+
+        // nội dung bên trong của vùng không gian này là các thứ được vẽ từ đối tượng getContext("2d")
+        this.context = this.canvas.getContext("2d");
+
+        //Method start() tạo ra 1 <canvas> và chèn nó như childnode đầu tiên của <body>
+        document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+    }
+}
+
+// khai báo biến cho component
+var myGamePiece;
+
+function startGame() {
+
+    //Hàm startGame() gọi đến method start() của đối tượng myGameArea
+    myGameArea.start();
+
+    // khởi tạo component và set giá trị cho (độ rộng, chiều cao, màu, hoành độ x (khoảng cách của component tới biên trái của vùng game), tung độ y (khoảng cách của component tới biên phía trên của vùng game))
+
+    // gọi tới hàm component bên dưới và gán giá trị cho các thuộc tính bằng các đối số truyền vào
+    myGamePiece = new component(30, 30, "red", 10, 120);
+}
+
+function component(width, height, color, x, y) {
+    this.width = width;
+    this.height = height;
+    this.x = x;
+    this.y = y;
+    ctx = myGameArea.context;
+    ctx.fillStyle = color;
+    ctx.fillRect(this.x, this.y, this.width, this.height);
+}
+
+var myGamePiece;
+
+function startGame() {
+    myGamePiece = new component(30, 30, "red", 10, 120);
+    myGameArea.start();
+}
+
+var myGameArea = {
+    canvas : document.createElement("canvas"),
+    start : function() {
+        this.canvas.width = 480;
+        this.canvas.height = 270;
+        this.context = this.canvas.getContext("2d");
+        document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+
+        // hẹn giờ để chạy hàm updateGameArea() sau mỗi 20 ms/lần
+        this.interval = setInterval(updateGameArea, 20);
+    },
+
+    // hàm clear() để làm sạch canvas
+    clear : function() {
+        this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+    }
+}
+
+function component(width, height, color, x, y) {
+    this.width = width;
+    this.height = height;
+    this.x = x;
+    this.y = y;
+
+    // tạo hàm update() trong hàm tạo component() để update số liệu khi vẽ component
+    this.update = function(){
+        ctx = myGameArea.context;
+        ctx.fillStyle = color;
+        ctx.fillRect(this.x, this.y, this.width, this.height);
+    }
+}
+
+function updateGameArea() {
+    myGameArea.clear();
+    myGamePiece.update();
+}
+
+
+// khai báo biến cho component
+var myGamePiece;
+
+function startGame() {
+
+    //Hàm startGame() gọi đến method start() của đối tượng myGameArea
+    myGameArea.start();
+
+    // khởi tạo component và set giá trị cho (độ rộng, chiều cao, màu, hoành độ x (khoảng cách của component tới biên trái của vùng game), tung độ y (khoảng cách của component tới biên phía trên của vùng game))
+
+    // gọi tới hàm component bên dưới và gán giá trị cho các thuộc tính bằng các đối số truyền vào
+    myGamePiece = new component(30, 30, "red", 10, 120);
+}
+
+function component(width, height, color, x, y) {
+    this.width = width;
+    this.height = height;
+    this.x = x;
+    this.y = y;
+    ctx = myGameArea.context;
+    ctx.fillStyle = color;
+    ctx.fillRect(this.x, this.y, this.width, this.height);
+}
+
+
+        </script>
+
     </canvas>
+
+    <!-- Panting the background -->
+
+    <script>
+        const canvas = document.getElementById("myCanvas");
+        const ctx = canvas.getContext("2d");
+        ctx.fillStyle = "red";
+        ctx.fillRect(0,0,150,75);
+        </script>
+
 </body>
 </html>
