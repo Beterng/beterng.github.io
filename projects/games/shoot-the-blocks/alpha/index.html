@@ -6,6 +6,16 @@
     <title>Shoot The Blocks</title>
     
     <style>
+
+
+
+.bitter-normal {
+  font-family: "Bitter", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
         * {
             margin: 0;
             padding: 0;
@@ -14,10 +24,13 @@
         canvas {
             width: 100%;
             height: 100%;
+            display: grid;
+            justify-self: center;
+            text-align: center;
         }
     </style>
 </head>
-<body height="100vh" width="100%" style="background-color: rgb(3, 0, 28); overflow: hidden;">
+<body height="100vh" width="100%" style="background-color: rgb(8, 6, 22);">
     
 
     <canvas id="myCanvas">
@@ -146,11 +159,45 @@ function component(width, height, color, x, y) {
     <!-- Panting the background -->
 
     <script>
-        const canvas = document.getElementById("myCanvas");
+        canvas = document.getElementById("myCanvas");
         const ctx = canvas.getContext("2d");
-        ctx.fillStyle = "red";
-        ctx.fillRect(0,0,150,75);
-        </script>
+        ctx.fillStyle = "black";
+        ctx.fillRect(4,6,290, 290);
+
+
+        ctx.fillStyle = "blue";
+    // ctx.fillRect(4,6,100, 290);
+    ctx.font = "20px Bitter";
+    ctx.fillText("Hello World", 4,149, 100, 100);
+
+    </script>
+
+<script>
+    const canvas = document.getElementById("myCanvas");
+    const ctx = canvas.getContext("2d");
+    ctx.fillStyle = "blue";
+    // ctx.fillRect(4,6,100, 290);
+    ctx.font = "20 Arial";
+    ctx.fillText("Hello World", 4,100,400, 100);
+
+    </script>
+        
+
+<script>
+    var elem = document.getElementById("myCanvas");
+
+/* Function to open fullscreen mode */
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
+}
+</script>
+</script>
 
 </body>
 </html>
