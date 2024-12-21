@@ -1,5 +1,5 @@
 if (screen.width <= 699) {
-    let mobile_url = "https://beterng.github.io/about-me/mobile/";
+    let mobile_url = "/about-me/mobile/";
     window.location = mobile_url;
 }
 
