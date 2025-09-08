@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beterng's Home</title>
-    <script src="../src/js/tran_to_mobile_web.js"></script>
+    <title>Beterng's Profile</title>
+    <script src="./tran_to_mobile_web.js"></script>
     <link rel="stylesheet" href="./css.font.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
@@ -14,7 +14,6 @@
     margin: 0px;
     box-sizing: border-box;  
     text-align: center;
-
 }
 
 html,
@@ -25,33 +24,36 @@ body {
     justify-content: center;
     align-items: center;
     
-
 }
 
 /* Backgournd  1 */
 .color-back {
 /* background-image: url(./resc/img/background-19-6.png); */
-background: radial-gradient(rgb(0, 15, 45), rgb(0, 50, 77));
+background: radial-gradient(rgb(0, 0, 12), rgb(0, 25, 145));
 background-repeat: no-repeat;
 background-size: cover;
 position: fixed;
 box-sizing: border-box;
+margin-top: -5%;
 align-content: center;
-height: 100%;
+height: 108vh;
 width: 100%;
 justify-self: center;
-border: 0 25px 40px rgba(0, 0, 0, 0.1);
+border: 0 25px 40px rgba(187, 139, 139, 0.1);
 box-shadow: rgba(0, 0, 0, 0.1);
 }
+
 /* Button */
 .tabs input{
+    visibility: hidden;
     display: none;
 }
 
 .buttons
 {
-    margin-top: -0.1%;
-    width: 100%;
+    margin-top: 2%;
+    margin-left: 30%;
+    width: 40%;
     position: relative;
     display: flex;
     gap: 3%;
@@ -59,11 +61,7 @@ box-shadow: rgba(0, 0, 0, 0.1);
     border-bottom: 2px solid rgba(255, 255, 255, 0.151);
     background: #000333;
     overflow: hidden;
-    border-bottom-left-radius: 2vh;
-    border-bottom-right-radius: 2vh;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    margin-bottom: 7%;
+    border-radius: 20px;
 }
 
 .buttons label {
@@ -101,10 +99,10 @@ box-shadow: rgba(0, 0, 0, 0.1);
 }
 .underline::before {
     content: "";
-    position: abdesktop/rescsolute;
+    position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    width: 8vh;
+    width: 7vh;
     height: 200%;
     background: #ffff;
     border-radius: 4px;
@@ -124,11 +122,11 @@ box-shadow: rgba(0, 0, 0, 0.1);
 }
 
 .tabs input:nth-child(1):checked ~ .buttons .underline {
-    left: 2.9%;
+    left: 9%;
 }
 
 .tabs input:nth-child(2):checked ~ .buttons .underline {
-    left: 21.5%;
+    left: 24.4%;
 }
 
 .tabs input:nth-child(3):checked ~ .buttons .underline {
@@ -136,11 +134,11 @@ box-shadow: rgba(0, 0, 0, 0.1);
 }
 
 .tabs input:nth-child(4):checked ~ .buttons .underline {
-    left: 58.6%;
+    left: 55.6%;
 }
 
 .tabs input:nth-child(5):checked ~ .buttons .underline {
-    left: 77%;
+    left: 71%;
 }
 
 /*              */
@@ -161,10 +159,12 @@ background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255
 backdrop-filter: blur(10px);
 -webkit-backdrop-filter: blur(10px);
 align-content: center;
+text-align: center;
+max-width: 70%;
 margin-top: 2%;
-margin-left: 2.5%;
-height: 81vh;
-width: 95%;
+margin-inline: auto;
+height: 80vh;
+width: 70%;
 justify-self: center;
 border: 1px soild rgba(255, 255, 255,0.18);
 box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
@@ -196,6 +196,25 @@ main img {
     height: 5vh;
     margin-block: 2vh;
     margin-inline: 3vh;
+}
+
+h1, h2, p {
+    color: rgb(245, 212, 212);
+    padding: 2px;
+}
+ul, li, p, h1, h2 {
+    list-style-type: none;
+}
+.p4-left {
+
+    margin-left: -200px;
+} 
+.p4-right {
+    margin-left: 400px;
+    margin-top: -0px;
+}
+.b4-right {
+    margin-top: -80px;
 }
 </style>
 </head>
@@ -243,21 +262,32 @@ main img {
 
  <!--            #### ####       Page 1      ####    ####        -->
     <span id="page1" class="profile main glass page">
-        <h1>Profile</h1>
-        <p>Currently in the build. See you later in this tab</p>
-        <div style="display: none;">
-            <h2>Hello!👋 My name is Phuong but you can call me Beter.</h2>
-            <p>😆 Nice to see you in here.</p>
+        <h1 style="margin-top: -150px;">Profile</h1>
+
+        <div style="text-align: center;">
+            <img src="./resc/img/avater-2022.jpg" type ="png" style="width: 20vh; height: 20vh; border-radius: 100%; margin-left: -400px; margin-top: 100px;" >
+            <h1 style="margin-left: -420px;">Beter Nguyen</h1>
+            <p style="margin-left: -420px; margin-top: 20px;">Nguyễn Tri Phương</p>
         </div>
 
+        <div style="margin-top: -200px; margin-left: 400px;">
+            <p style="padding: 10px; font-size: 20px;">Pronoun: He/Him.</p>
+            <p style="padding: 10px; font-size: 20px;">Brithday: 07/08</p>
+            <p style="padding: 10px; font-size: 20px;">Favfood: sushi</p>
+            <p style="padding: 10px; font-size: 20px;">Hello World!: Join github lobby in 2023</p>
+
+        </div>
     </span>
 
        <!--        Page 2          -->
     <span id="page2" class="way-info main glass page">
-        <h1>My Story</h1>
-        <p>Currently in the build. See you later in this tab</p>
-        <div style="display: none;">
-
+        <h1 style="margin-top: -100px;">My Story</h1>
+        <p style="display: none;">Currently in the build. See you later in this tab</p>
+        <div>
+            <p style="margin-top: 40px; padding: 20px; font-size: 20px;">04/2023: Start study with coding.</p>
+            <p style="padding: 20px; font-size: 20px;">12/2023: Join github lobby.</p>
+            <p style="padding: 20px; font-size: 20px;">10/2024: Starting study html at school.</p>
+            <p style="padding: 20px; font-size: 20px;">Now: Continue study in school.</p>
         </div>
     </span>
 
@@ -277,25 +307,26 @@ main img {
 <!--            #### ####       Page 4      ####    ####        -->        
         
         <span id="page4" class="skills-cer main glass page">
-            <h1>Technical skills</h1>
-            <p>Currently in the build. See you later in this tab</p>
-            <div style="display: none;">
-                <h2>Currently learning</h2>
+            <h1 style="margin-top: -100px;">Technical skills</h1>
+            <div style="margin: 20px;">
+                <h2 style="margin-top: 50px;">Currently learning</h2>
 
-                <ol>
-                    <li><strong>Front-end technologies</strong></li>
-                    <ul>
-                        <li><p>HTML</p></li>
-                        <li><p>CSS</p></li>
-                        <li><p>JavaScript</p></li>
+                <ul>
+                    <li class="p4-left" style="margin-left: -400px; margin-top: 30px ;"><strong>Front-end technologies</strong></li>
+                    <ul class="p4-left">
+                        <li class="p4-left"><p>HTML</p></li>
+                        <li class="p4-left"><p>CSS</p></li>
+                        <li class="p4-left"><p>JavaScript</p></li>
                     </ul>
-                    <li><strong>Back-end technologies</strong></li>
+                    <div class="b4-right">
+                    <li class="p4-right"><strong>Back-end technologies</strong></li>
                     <ul>
-                        <li><p>Python 3</p></li>
-                        <li><p>C#</p></li>
-                        <li><p>C++</p></li>
+                        <li class="p4-right"><p>Python 3</p></li>
+                        <li class="p4-right"><p>C#</p></li>
+                        <li class="p4-right"><p>C++</p></li>
                     </ul>
-                </ol>
+                    </div>
+                </ul>
             </div>
 
         </span>
@@ -309,6 +340,8 @@ main img {
             </div>
             <div>
                 <h2>Reply to me using Email</h2>
+                <p>Email: nguytriphuong@gmail.com</p>
+                <p> Email 2: beterng@gmail.com</p>
             </div>
         </span>
 
