@@ -63,8 +63,19 @@ li a, li a:visited {
     transition: all 0.5s;
 }
 
-li a:hover, li a:focus{
+li a:hover{
+    font-size: 120%;
     color: #00bbf0; 
     background-color: #00204a; 
     text-decoration: none;
+}
+
+footer span a {
+    text-decoration: none;
+    color: #fdb44b;
+}
+
+footer span a:hover {
+    text-decoration: none;
+    color: #00204a;
 }
